@@ -7,19 +7,30 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 # 知识点整理
 ### Javascript
 1. Event Loop
+2. 闭包
+3. 原型、原型链
+4. this
 
 ### ES6
 1. 拓展运算符
 2. 解构赋值
-3. Promise、异步等。。。
+3. Promise、Async and Await等。。。
+4. 箭头函数
 
 ### CSS
+1. Flex布局
+2. 1px边框
+3. css开启硬件加速来提升性能
+4. SVG图标
+5. 图标字体
+6. EM、REM、px
 
 ### HTML
 
 ### Vue
 
 ### React
+1. How Virtual-DOM and diffing works in React
 
 ### Webpack
 
@@ -30,6 +41,7 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 ### HTTP协议
 
 ### 浏览器相关
+1. 浏览器渲染过程
 
 ### 模块化
 
