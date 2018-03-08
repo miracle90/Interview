@@ -67,6 +67,7 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 ### 前端工程化
 
 # 常见笔试题
+[链接](https://github.com/liyayun713/Interview/blob/master/questions/common.md)
 
 # 前端跳槽面试必备技巧
 
