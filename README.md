@@ -18,12 +18,18 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 4. 箭头函数
 
 ### CSS
-1. Flex布局
-2. 1px边框
-3. css开启硬件加速来提升性能
-4. SVG图标
-5. 图标字体
-6. EM、REM、px
+* 各种居中方案
+* Flex布局
+* Grid布局
+* BFC
+* css3的新选择器
+* 盒模型
+* 动画
+* 1px边框
+* css开启硬件加速来提升性能
+* SVG图标
+* 图标字体
+* EM、REM、px
 
 ### HTML
 
