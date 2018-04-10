@@ -6,10 +6,11 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 
 # 知识点整理
 ### Javascript
-1. Event Loop
-2. 闭包
-3. 原型、原型链
-4. this
+* Event Loop
+* 闭包
+* 原型、原型链
+* this
+* 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
 
 ### ES6
 1. 拓展运算符
@@ -32,6 +33,12 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 * EM、REM、px
 
 ### HTML
+* HTML5新特性
+* HTML5新标签
+* html语义化
+* SEO
+* doctype
+* 各种meta标签
 
 ### Vue
 * MVVM是什么
