@@ -28,6 +28,12 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 ### HTML
 
 ### Vue
+* MVVM是什么
+* 生命周期
+* vuex的作用及原理
+* vue-router的实现
+* 父子组件通讯
+* 源码考察（双向数据绑定，虚拟DOM）
 
 ### React
 1. How Virtual-DOM and diffing works in React
