@@ -23,7 +23,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ### Javascript
 * 面向对象 OOP
 * 事件机制（Event Loop）、异步、同步、单线程、线程
-* 闭包、js垃圾回收机制
+* [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
 * 原型、原型链、继承、__proto__、prototype
 * 简述原型链、对象、构造函数之间的联系
 * Ajax
@@ -43,7 +43,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 几种获取元素距离、长度的方法
 * 常用DOM操作（增删改查）
 * 数组去重、排序、乱序
-* 函数节流
+* 函数节流、防抖
 * 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
 * js发展史简述
 
