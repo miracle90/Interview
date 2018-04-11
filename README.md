@@ -21,11 +21,31 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * Git
 
 ### Javascript
-* 事件机制（Event Loop）
-* 闭包
-* 原型、原型链
-* this、call、apply、bind
+* 面向对象 OOP
+* 事件机制（Event Loop）、异步、同步、单线程、线程
+* 闭包、js垃圾回收机制
+* 原型、原型链、继承、__proto__、prototype
+* 简述原型链、对象、构造函数之间的联系
+* Ajax
+* 作用域、this、call、apply、bind
+* 深浅拷贝
+* 函数柯里化
+* 创建对象的几种方式
+* 数据类型的判断
+* 常用js设计模式
+* setTimeout、setInterval原理
+* 事件冒泡、事件捕获
+* 事件委托的原理
+* navigator.userAgent
+* JS浮点数精度问题
+* DOM事件的target和currentTarget的区别
+* 常用数组、字符串操作方法
+* 几种获取元素距离、长度的方法
+* 常用DOM操作（增删改查）
+* 数组去重、排序、乱序
+* 函数节流
 * 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
+* js发展史简述
 
 ### ES6
 1. 拓展运算符
