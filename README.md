@@ -11,7 +11,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * web存储（session、cookie、sessionStorage、localStorage等）
 * 浏览器缓存（强制缓存、协商缓存）
 * 跨域
-* 模块化（commonjs、requirejs、seajs、ES6的模块化）
+* 模块化（commonjs、requirejs、seajs、ES6的模块化、AMD、CMD等）
 * web安全（XSS、CSRF）
 * MVVM、MVC、MVP
 * 算法相关（快排、二分法查找）
@@ -80,6 +80,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * px、em、rem、viewport对比
 * css实现一个三角线、扇形、正方体
 * less、sass、stylus区别
+* @import 和 link 的区别
 
 ### HTML
 * HTML5新特性
