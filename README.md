@@ -1,15 +1,30 @@
 # Interview
 ```js
 new Date()    // Sun Jan 28 2018 23:54:02 GMT+0800 (CST)
-new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
+new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
+new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ```
 
 # 知识点整理
+### 综合
+* 从输入url到页面加载的过程
+* web存储（session、cookie、sessionStorage、localStorage等）
+* 浏览器缓存（强制缓存、协商缓存）
+* 跨域
+* 模块化（commonjs、requirejs、seajs、ES6的模块化）
+* web安全（XSS、CSRF）
+* MVVM、MVC、MVP
+* 算法相关（快排、二分法查找）
+* 懒加载、预加载
+* 前端注册登录流程
+* 框架源码阅读
+* Git
+
 ### Javascript
-* Event Loop
+* 事件机制（Event Loop）
 * 闭包
 * 原型、原型链
-* this
+* this、call、apply、bind
 * 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
 
 ### ES6
@@ -62,10 +77,6 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 ### 浏览器相关
 1. 浏览器渲染过程
 
-### 模块化
-
-### 安全类
-
 ### 项目相关
 * 项目部署
 * 项目监控
@@ -78,16 +89,17 @@ new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
 
 ### Node.js
 
-### Git
-
-### 算法类
-
-### 设计模式
-
 ### 前端工程化
 
 # 常见笔试题
 [链接](https://github.com/liyayun713/Interview/blob/master/questions/common.md)
+
+
+
+
+
+
+
 
 # 前端跳槽面试必备技巧
 
