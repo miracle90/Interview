@@ -54,18 +54,28 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 4. 箭头函数
 
 ### CSS
+* repaint、reflow
 * 各种居中方案
+* 各种经典布局（双飞翼、圣杯）
 * Flex布局
 * Grid布局
 * BFC
 * css3的新选择器
-* 盒模型
-* 动画
+* css3新特性
+* 怪异盒模型、标准和模型
+* 清除浮动
+* css哪些属性可以继承
+* 行内元素、块级元素、空元素
+* 样式权重的优先级
+* 动画（animation、transform、transition）
 * 1px边框
 * css开启硬件加速来提升性能
-* SVG图标
+* SVG
+* 雪碧图
 * 图标字体
-* EM、REM、px
+* px、em、rem、viewport对比
+* css实现一个三角线、扇形、正方体
+* less、sass、stylus区别
 
 ### HTML
 * HTML5新特性
