@@ -48,10 +48,14 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * js发展史简述
 
 ### ES6
-1. 拓展运算符
-2. 解构赋值
-3. Promise、Async and Await等。。。
-4. 箭头函数
+* let、const
+* class
+* 拓展运算符
+* 解构赋值
+* 异步、promise、async、wait等。。。
+* 箭头函数
+* 字符串模板
+* 模块化（import、export）
 
 ### CSS
 * repaint、reflow
@@ -105,7 +109,8 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ### HTTP协议
 
 ### 浏览器相关
-1. 浏览器渲染过程
+* 浏览器发展史
+* 浏览器渲染过程
 
 ### 项目相关
 * 项目部署
