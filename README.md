@@ -21,6 +21,8 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * Git
 
 ### Javascript
+> 专题系列
+
 * 面向对象 OOP
 * 事件机制（Event Loop）、异步、同步、单线程、线程
 * [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
@@ -33,6 +35,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 创建对象的几种方式
 * new一个对象的4个步骤
 * 数据类型的判断
+
+> 简答题系列
+
 * 常用js设计模式
 * setTimeout、setInterval原理
 * 事件冒泡、事件捕获
