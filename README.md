@@ -31,6 +31,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 深浅拷贝
 * 函数柯里化
 * 创建对象的几种方式
+* new一个对象的4个步骤
 * 数据类型的判断
 * 常用js设计模式
 * setTimeout、setInterval原理
