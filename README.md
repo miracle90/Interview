@@ -55,6 +55,8 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ### ES6
 > 专题系列
 
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
+
 * let、const
 * class
 * 拓展运算符
@@ -68,6 +70,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 > 专题系列
 
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
+
 * repaint、reflow
 * 各种居中方案
 * 各种经典布局（双飞翼、圣杯）
@@ -93,6 +96,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * @import 和 link 的区别
 
 ### HTML
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 * HTML5新特性
 * HTML5新标签
 * html语义化
@@ -101,6 +105,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 各种meta标签
 
 ### Vue
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 * MVVM是什么
 * 生命周期
 * vuex的作用及原理
@@ -139,6 +144,8 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 
 # 常见笔试题
 [链接](https://github.com/liyayun713/Interview/blob/master/questions/common.md)
+
+
 
 
 
