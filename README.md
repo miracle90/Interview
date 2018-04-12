@@ -36,8 +36,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * new一个对象的4个步骤
 * 数据类型的判断
 
-> 简答题系列
-
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 * 常用js设计模式
 * setTimeout、setInterval原理
 * 事件冒泡、事件捕获
@@ -54,6 +53,8 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * js发展史简述
 
 ### ES6
+> 专题系列
+
 * let、const
 * class
 * 拓展运算符
@@ -64,6 +65,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 模块化（import、export）
 
 ### CSS
+> 专题系列
+
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 * repaint、reflow
 * 各种居中方案
 * 各种经典布局（双飞翼、圣杯）
