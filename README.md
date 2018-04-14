@@ -24,7 +24,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 
 > 专题系列
-* 面向对象 OOP
+* 面向对象 vs 函数式编程
 * 事件机制（Event Loop）、异步、同步、单线程、线程
 * [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
 * 原型、原型链、继承、__proto__、prototype
