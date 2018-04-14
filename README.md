@@ -55,6 +55,7 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/es6.md)
 
 > 专题系列
+
 * let、const
 * class
 * 拓展运算符
@@ -66,8 +67,15 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 
 ### CSS
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
+* CSS 有哪些样式可以给子元素继承
+* 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些
+* box-sizing常用的属性有哪些? 分别有啥作用?
+* 清除浮动的方式有哪些？比较好的是哪一种？
 
 > 专题系列
+* css实现一个三角线、扇形、正方体
+* 
+
 * repaint、reflow
 * 各种居中方案
 * 各种经典布局（双飞翼、圣杯）
@@ -76,10 +84,6 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * BFC
 * css3的新选择器
 * css3新特性
-* 怪异盒模型、标准和模型
-* 清除浮动
-* css哪些属性可以继承
-* 行内元素、块级元素、空元素
 * 样式权重的优先级
 * 动画（animation、transform、transition）
 * 1px边框
@@ -88,7 +92,6 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 雪碧图
 * 图标字体
 * px、em、rem、viewport对比
-* css实现一个三角线、扇形、正方体
 * less、sass、stylus区别
 * @import 和 link 的区别
 
