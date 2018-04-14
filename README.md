@@ -21,8 +21,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * Git
 
 ### Javascript
-> 专题系列
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 
+> 专题系列
 * 面向对象 OOP
 * 事件机制（Event Loop）、异步、同步、单线程、线程
 * [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
@@ -35,8 +36,6 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 创建对象的几种方式
 * new一个对象的4个步骤
 * 数据类型的判断
-
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 * 常用js设计模式
 * setTimeout、setInterval原理
 * 事件冒泡、事件捕获
@@ -53,10 +52,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * js发展史简述
 
 ### ES6
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/es6.md)
+
 > 专题系列
-
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
-
 * let、const
 * class
 * 拓展运算符
@@ -67,10 +65,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 模块化（import、export）
 
 ### CSS
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
+
 > 专题系列
-
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
-
 * repaint、reflow
 * 各种居中方案
 * 各种经典布局（双飞翼、圣杯）
@@ -96,7 +93,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * @import 和 link 的区别
 
 ### HTML
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/html/html.md)
+
+> 专题系列
 * HTML5新特性
 * HTML5新标签
 * html语义化
@@ -105,7 +104,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 各种meta标签
 
 ### Vue
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
+> [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
+
+> 专题系列
 * MVVM是什么
 * 生命周期
 * vuex的作用及原理
