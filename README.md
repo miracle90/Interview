@@ -31,16 +31,25 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 
 ### Javascript
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
+* JS有几种数据类型，其中基本数据类型有哪些？
+* null和undefined的差异
+* JS 的DOM 操作(Node节点获取及增删查改)
+* 对数组 ['2018-03-05', '2013-06-12','2019-03-12','2018-03-05','2014-02-22'] 去重且排序
+* 对数组[1,2,3,4,5,'6',7,'8','a','b','z']进行乱序
+* JS 实现String.trim()方法
 
 > 专题系列
+* Ajax
+* 数组去重、排序、乱序
+* 深浅拷贝
+* 作用域、this、call、apply、bind
+* 原型、原型链、继承、__proto__、prototype
+
+
 * 面向对象 vs 函数式编程
 * 事件机制（Event Loop）、异步、同步、单线程、线程
 * [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
-* 原型、原型链、继承、__proto__、prototype
 * 简述原型链、对象、构造函数之间的联系
-* Ajax
-* 作用域、this、call、apply、bind
-* 深浅拷贝
 * 函数柯里化
 * 创建对象的几种方式
 * new一个对象的4个步骤
@@ -54,8 +63,6 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * DOM事件的target和currentTarget的区别
 * 常用数组、字符串操作方法
 * 几种获取元素距离、长度的方法
-* 常用DOM操作（增删改查）
-* 数组去重、排序、乱序
 * 函数节流、防抖
 * 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
 * js发展史简述
@@ -80,20 +87,20 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 * 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些
 * box-sizing常用的属性有哪些? 分别有啥作用?
 * 清除浮动的方式有哪些？比较好的是哪一种？
+* 样式权重的优先级
 
 > 专题系列
 * css实现一个三角线、扇形、正方体
-* 
-
-* repaint、reflow
 * 各种居中方案
+* repaint、reflow
+
+
 * 各种经典布局（双飞翼、圣杯）
 * Flex布局
 * Grid布局
 * BFC
 * css3的新选择器
 * css3新特性
-* 样式权重的优先级
 * 动画（animation、transform、transition）
 * 1px边框
 * css开启硬件加速来提升性能
@@ -108,9 +115,9 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/html/html.md)
 
 > 专题系列
+* html语义化
 * HTML5新特性
 * HTML5新标签
-* html语义化
 * SEO
 * doctype
 * 各种meta标签
@@ -136,6 +143,8 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ### 性能优化
 
 ### HTTP协议
+* 谈谈你对 TCP 的理解
+* HTTP 和 HTTPS 有何差异
 
 ### 浏览器相关
 * 浏览器发展史
