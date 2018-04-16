@@ -21,4 +21,23 @@
 ### 清除浮动的方式有哪些？比较好的是哪一种？
 常用的一般为三种 `.clearfix`，`clear: both`，`overflow: hidden`
 
+比较好是 .clearfix，伪元素万金油版本
+```css
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+```
+clear: both;    // 若是用在同一个容器内相邻元素上,那是贼好的...有时候在容器外就有些问题了, 比如相邻容器的包裹层元素塌陷
+overflow: hidden;   // 这种若是用在同个容器内,可以形成 BFC避免浮动造成的元素塌陷
+
+### 样式权重的优先级
+!important > 行内样式 > id > class > tag
+
+样式权重可以叠加, 比如 id>class
+
 
