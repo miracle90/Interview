@@ -207,6 +207,15 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ### 三、 css盒模型
 
 ### 四、 DOM事件
+* DOM事件的级别
+1. DOM0 element.onclick = function() {}
+2. DOM1 element.addEventListener('click', function() {}, false);
+3. DOM2 element.addEventListener('keyup', function() {}, false);
+* DOM事件模型（冒泡、捕获）
+* DOM事件流
+* 描述DOM事件捕获的具体流程
+* event对象的常见应用
+* 自定义事件
 
 ### 五、 HTTP协议
 
