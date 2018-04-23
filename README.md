@@ -218,16 +218,16 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 > 捕获--目标阶段--冒泡
 
 * 描述DOM事件捕获的具体流程
-> 从上到下，第一个接收的是 window--document--html--body
+> 从上到下，第一个接收的是 window--document--html--body  
 document.documentElement  
 document.body  
 
 * event对象的常见应用
-event.stopPropagation() 阻止冒泡  
-event.stopImmediatePropagation() 事件响应优先级绑定多个事件时，阻止其他事件执行  
-event.preventDefault() 阻止默认事件  
-event.target 当前被点击的元素，可以用来事件委托  
-event.currentTarget 当前所绑定的事件，比如在父级元素上绑定的  
+event.stopPropagation()阻止冒泡  
+event.stopImmediatePropagation()事件响应优先级绑定多个事件时，阻止其他事件执行  
+event.preventDefault()阻止默认事件  
+event.target当前被点击的元素，可以用来事件委托  
+event.currentTarget当前所绑定的事件，比如在父级元素上绑定的  
 
 * 自定义事件
 new Event()
