@@ -207,29 +207,29 @@ new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
 ### 三、 css盒模型
 
 ### 四、 DOM事件
-* DOM事件的级别（没有DOM1）
-> 1. DOM0 element.onclick = function() {}
-> 2. DOM1 element.addEventListener('click', function() {}, false);（IE atachEvent）
-> 3. DOM2 element.addEventListener('keyup', function() {}, false);（事件增加类型）
+> DOM事件的级别（没有DOM1）
+1. DOM0 element.onclick = function() {}
+2. DOM1 element.addEventListener('click', function() {}, false);（IE atachEvent）
+3. DOM2 element.addEventListener('keyup', function() {}, false);（事件增加类型）
 
-* DOM事件模型（冒泡、捕获）
+> DOM事件模型（冒泡、捕获）
 
-* DOM事件流
-> 捕获--目标阶段--冒泡
+> DOM事件流
+捕获--目标阶段--冒泡
 
-* 描述DOM事件捕获的具体流程
-> 从上到下，第一个接收的是 window--document--html--body  
-document.documentElement  
-document.body  
+> 描述DOM事件捕获的具体流程
+1. 从上到下，第一个接收的是 window--document--html--body
+2. document.documentElement
+3. document.body
 
-* event对象的常见应用
-event.stopPropagation()阻止冒泡  
-event.stopImmediatePropagation()事件响应优先级绑定多个事件时，阻止其他事件执行  
-event.preventDefault()阻止默认事件  
-event.target当前被点击的元素，可以用来事件委托  
-event.currentTarget当前所绑定的事件，比如在父级元素上绑定的  
+> event对象的常见应用
+* event.stopPropagation()阻止冒泡
+* event.stopImmediatePropagation()事件响应优先级绑定多个事件时，阻止其他事件执行
+* event.preventDefault()阻止默认事件
+* event.target当前被点击的元素，可以用来事件委托
+* event.currentTarget当前所绑定的事件，比如在父级元素上绑定的
 
-* 自定义事件
+> 自定义事件
 new Event()
 
 ```js
@@ -242,6 +242,13 @@ node.dispatch(eve);
 ```
 
 ### 五、 HTTP协议
+* HTTP协议的主要特点
+* HTTP报文的组成部分
+* HTTP方法
+* POST和GET方法
+* HTTP状态码
+* 什么是持久连接
+* 什么是管线化
 
 ### 六、 原型类
 
