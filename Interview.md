@@ -166,15 +166,18 @@ node.dispatch(eve);
 * 基本概念和缩写：跨站脚本攻击（CROSS-SITE scripting）
 
 * 攻击原理：
+
 向页面注入脚本（script标签、img标签）
 
 * 防范措施
+
 让脚本不可执行
 
 #### csrf
 * 基本概念和缩写：跨站请求伪造（CROSS-SITE-REQUEST-FORGEY）
 
 * 攻击原理：
+
 用户登录A网站，服务器返回cookie，
 
 访问网站B时，引诱点击，这个点击会是一个链接，
@@ -186,6 +189,7 @@ node.dispatch(eve);
 网站A确认身份发现是合法用户，就执行接口的动作  
 
 * 防御措施
+
 1. token验证（伪造的请求会自动携带cookie，不会自动携带token）
 2. Referer验证（页面来源）
 3. 隐藏令牌（和token类似，放在header上不在链接上）
