@@ -162,8 +162,23 @@ node.dispatch(eve);
 * CORS
 
 ### 九、 前端安全类
-1. xss
-2. csrf
+#### xss
+* 
+
+#### csrf
+* 基本概念和缩写：跨站请求伪造（CROSS-SITE-REQUEST-FORGEY）
+
+* 攻击原理：
+用户登录A网站，服务器返回cookie，  
+访问网站B时，引诱点击，这个点击会是一个链接，  
+指向网站A的API接口（尤其当这个链接是get类型时）  
+访问A网站这个链接的时候，浏览器会自动上传cookie，  
+网站A确认身份发现是合法用户，就执行接口的动作  
+
+* 防御措施
+1. token验证（伪造的请求会携带cookie，不会携带token）
+2. Referer验证（页面来源）
+3. 隐藏令牌（和token类似，放在header上不在链接上）
 
 ### 十、 前端算法类
 
