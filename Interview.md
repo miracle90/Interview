@@ -36,14 +36,126 @@
 ```
 2. 绝对定位
 ```html
+<section class="layout absolute">
+    <style media="screen">
+        .layout.absolute .left-center-right > div {
+            position: absolute;
+        }
 
+        .layout.absolute .left {
+            left: 0;
+            width: 300px;
+            background: red;
+        }
+        .layout.absolute .right {
+            right: 0;
+            width: 300px;
+            background: blue;
+        }
+        .layout.absolute .center {
+            left: 300px;
+            right: 300px;
+            background: gold;
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">绝对定位---center部分</div>
+        <div class="right"></div>
+    </article>
+</section>
 ```
 
 3. Flex
+```html
+<section class="layout flex">
+    <style media="screen">
+        .layout.flex {
+            margin-top: 200px;
+        }
+        .layout.flex .left-center-right {
+            display: flex;
+        }
+        .layout.flex .left {
+            width: 300px;
+            background: red;
+        }
+        .layout.flex .right {
+            width: 300px;
+            background: blue;
+        }
+        .layout.flex .center {
+            flex: 1;
+            background: gold;
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">flex布局---center部分</div>
+        <div class="right"></div>
+    </article>
+</section>
+```
+
 4. Grid
+```html
+<section class="layout grid">
+    <style media="screen">
+        .layout.grid .left-center-right {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 100px;
+            grid-template-columns: 300px auto 300px;
+        }
+        .layout.grid .left {
+            background: red;
+        }
+        .layout.grid .right {
+            background: blue;
+        }
+        .layout.grid .center {
+            background: gold;
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">Grid布局---center部分</div>
+        <div class="right"></div>
+    </article>
+</section>
+```
+
 5. 表格布局
-
-
+```html
+<section class="layout table">
+    <style media="screen">
+        .layout.table .left-center-right {
+            display: table;
+            width: 100%;
+            height: 100px;
+        }
+        .layout.table .left {
+            display: table-cell;
+            width: 300px;
+            background: red;
+        }
+        .layout.table .right {
+            display: table-cell;
+            width: 300px;
+            background: blue;
+        }
+        .layout.table .center {
+            display: table-cell;
+            background: gold;
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">表格布局---center部分</div>
+        <div class="right"></div>
+    </article>
+</section>
+```
 
 ### 三、 css盒模型
 
