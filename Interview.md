@@ -8,22 +8,59 @@
 4. 回答灵活
 
 ### 二、 页面布局类
-1. 三栏布局
+#### 题目：假设高度已知，写出三栏布局，左右固定宽度各位300px，中间自适应
+1. 浮动
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <style media="screen">
+        html * {
+            margin: 0;
+            padding: 0;
+        }
 
-* 题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度300px，中间自适应
-
-> 浮动
-```css
-
+        .layout article div {
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="layout float">
+        <style media="screen">
+            .layout.float .left {
+                float: left;
+                width: 300px;
+                background: red;
+            }
+            .layout.float .right {
+                float: right;
+                width: 300px;
+                background: blue;
+            }
+            .layout.float .center {
+                background: gold;
+            }
+        </style>
+        <article class="left-right-center">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="center">浮动---center部分浮动---center部分浮动---center部分浮动---center部分浮动---center部分</div>
+        </article>
+    </section>
+</body>
+</html>
 ```
+2. 绝对定位
+3. Flex
+4. Grid
+5. 表格布局
 
-> 绝对定位
 
-> flexbox
-
-> 表格布局 display: table-cell
-
-> 网格布局 Grid布局
 
 ### 三、 css盒模型
 
