@@ -188,12 +188,12 @@
 3. window.getComputedStyle(dom).width/height，兼容性更好
 4. dom.getBoundingClientRect().width/height，计算元素的绝对位置，相对于视窗，获取top，left，width，height
 
-#### 边距重叠
-取最大值
+#### 边距重叠问题 --- 取最大值
 
-#### BFC（边距重叠解决方案）
-#### BFC的基本概念：块级格式化上下文
+#### BFC的基本概念 --- 块级格式化上下文（边距重叠解决方案）
+
 #### BFC的原理（BFC的渲染规则）
+
 #### 如何创建BFC
 1. float不为none
 2. position不为static、relative
@@ -205,29 +205,29 @@
 2. 清除浮动（将父元素设置成BFC后，子元素浮动也会计算到父元素的高度中）
 
 ### 四、 DOM事件
-> DOM事件的级别（没有DOM1）
+#### DOM事件的级别（没有DOM1）
 1. DOM0 element.onclick = function() {}
 2. DOM1 element.addEventListener('click', function() {}, false);（IE atachEvent）
 3. DOM2 element.addEventListener('keyup', function() {}, false);（事件增加类型）
 
-> DOM事件模型（冒泡、捕获）
+#### DOM事件模型（冒泡、捕获）
 
-> DOM事件流
+#### DOM事件流
 * 捕获--目标阶段--冒泡
 
-> 描述DOM事件捕获的具体流程
+#### 描述DOM事件捕获的具体流程
 1. 从上到下，第一个接收的是 window--document--html--body
 2. document.documentElement
 3. document.body
 
-> event对象的常见应用
+#### event对象的常见应用
 * event.stopPropagation()阻止冒泡
 * event.stopImmediatePropagation()事件响应优先级绑定多个事件时，阻止其他事件执行
 * event.preventDefault()阻止默认事件
 * event.target当前被点击的元素，可以用来事件委托
 * event.currentTarget当前所绑定的事件，比如在父级元素上绑定的
 
-> 自定义事件
+#### 自定义事件
 * new Event()
 
 ```js
@@ -238,6 +238,42 @@ node.addEventListener('custom', function(){
 // 触发
 node.dispatch(eve);
 ```
+```js
+// 自定义事件
+var eve = new Event('test');
+ev.addEventListener('test', function() {
+    console.log('test dispatch');
+});
+// 直接派发事件
+ev.dispatchEvent(eve);
+```
+
+### 类型转换（升级）
+#### 数据类型
+最新的ECMAScript标准定义了7种数据类型
+
+* 原始类型：Boolean，String，Number，Null，Undefined，Symbol(ES6中新增加数据类型)
+* 对象：Object
+
+#### 显式类型转换
+> Number函数
+1. Number('123')    // 123
+2. Number('')    // 0
+3. Number('abc')    // NaN
+4. Number(true)     // 1
+5. Number(false)     // 0
+6. Number(undefine)     // NaN
+7. Number(null)     // 0
+
+> String函数
+1. String(1)    // '1'
+2. String(true)    // 'true'
+3. String(undefined)    // 'undefined'
+4. String(null)    // 'null'
+
+> Boolean函数
+
+#### 隐式类型转换
 
 ### 五、 HTTP协议
 #### HTTP协议的主要特点
