@@ -167,13 +167,42 @@
 |Grid|替代栅格系统|兼容性|
 
 #### 题目延伸：假如高度未知，哪个方案失效
-浮动、绝对定位、Grid均会失效
-flex、表格布局可以
+* 浮动、绝对定位、Grid均会失效
+* flex、表格布局可以
 
 #### 题目延伸：5种方案的兼容性
 
-
 ### 三、 css盒模型
+#### 问题：谈谈你对css盒模型的认识？
+1. 基本概念：标准模型 + IE模型
+2. 标准模型和IE模型的区别（计算宽度和高度的不同）
+3. 如何设置
+
+* 标准盒模型的宽和高指的是content
+* IE盒模型的宽和高包括content+padding+border
+* box-sizing
+
+#### js如何设置、获取盒模型对应的宽和高
+1. dom.style.width/height来获取，只能取内联样式
+2. dom.currentStyle.width/height，只有IE支持
+3. window.getComputedStyle(dom).width/height，兼容性更好
+4. dom.getBoundingClientRect().width/height，计算元素的绝对位置，相对于视窗，获取top，left，width，height
+
+#### 边距重叠
+取最大值
+
+#### BFC（边距重叠解决方案）
+* BFC的基本概念：块级格式化上下文
+* BFC的原理（BFC的渲染规则）
+* 如何创建BFC
+1. float不为none
+2. position不为static、relative
+3. display中的table-cell等table属性可以
+4. overflow: hidden/auto，不为visible
+
+* BFC使用场景
+1. 解决边距重叠，给元素的父元素设置overflow: hidden/auto;
+2. 清除浮动（将父元素设置成BFC后，子元素浮动也会计算到父元素的高度中）
 
 ### 四、 DOM事件
 > DOM事件的级别（没有DOM1）
