@@ -192,15 +192,15 @@
 取最大值
 
 #### BFC（边距重叠解决方案）
-* BFC的基本概念：块级格式化上下文
-* BFC的原理（BFC的渲染规则）
-* 如何创建BFC
+#### BFC的基本概念：块级格式化上下文
+#### BFC的原理（BFC的渲染规则）
+#### 如何创建BFC
 1. float不为none
 2. position不为static、relative
 3. display中的table-cell等table属性可以
 4. overflow: hidden/auto，不为visible
 
-* BFC使用场景
+#### BFC使用场景
 1. 解决边距重叠，给元素的父元素设置overflow: hidden/auto;
 2. 清除浮动（将父元素设置成BFC后，子元素浮动也会计算到父元素的高度中）
 
