@@ -213,7 +213,7 @@
 #### DOM事件模型（冒泡、捕获）
 
 #### DOM事件流
-* 捕获--目标阶段--冒泡
+捕获--目标阶段--冒泡
 
 #### 描述DOM事件捕获的具体流程
 1. 从上到下，第一个接收的是 window--document--html--body
@@ -274,6 +274,15 @@ ev.dispatchEvent(eve);
 > Boolean函数
 
 #### 隐式类型转换
+> 四则运算
+
+> 判断语句（if语句）
+
+> Native调用（console.log）
+
+#### typeof
+
+#### instanceof
 
 ### 五、 HTTP协议
 #### HTTP协议的主要特点
