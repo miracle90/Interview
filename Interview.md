@@ -352,6 +352,22 @@ ev.dispatchEvent(eve);
 
 ### 六、 原型类
 #### 创建对象有几种方法
+1. 对象字面量
+2. 构造函数
+3. Object.create()
+
+```js
+var obj1 = {
+    name: 'obj1'
+};
+var obj2 = Object({name: 'obj2'});
+var M = function(name) {
+    this.name = name;
+}
+var obj3 = new M('obj3');
+var obj4 = Object.create({name: 'obj4'});
+```
+
 #### 原型、构造函数、实例、原型链
 #### instanceof原理
 #### new运算符
