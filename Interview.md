@@ -366,11 +366,36 @@ var M = function(name) {
 }
 var obj3 = new M('obj3');
 var obj4 = Object.create({name: 'obj4'});
+
+M.prototype.say = function() {
+    console.log('hello world!');
+}
+
+var obj5 = new M('obj5');
 ```
 
 #### 原型、构造函数、实例、原型链
+* 多个实例共用方法时使用原型
+* 函数也有__proto__（函数也是对象），指向Function.prototype
+
+```js
+M.prototype.constructor === M                   // true
+obj3.__proto__ === M.prototype                  // true
+M.prototype.__proto__ === Object.prototype      // true
+M.__proto__ === Function.prototype              // true
+```
+
 #### instanceof原理
+用 `constructor` 比 `instanceof` 严谨
+
 #### new运算符
+```
+var obj = new foo();
+```
+1. 一个新对象被创建，它继承自foo.prototype
+2. 构造函数被执行，相应的传参会被传入
+3. this会被指定这个新实例
+4. 如果构造函数返回一个对象，那么这个对象会取代整个new出来的对象
 
 ### 七、 面向对象类
 
