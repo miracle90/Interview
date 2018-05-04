@@ -400,11 +400,43 @@ var obj = new foo();
 ### 七、 面向对象类
 #### 类与实例
 1. 类的声明
+```js
+// 类的声明
+function Animal() {
+    this.name = 'wangwang';
+}
+// ES6类的声明
+class Animal6 {
+    constructor () {
+        this.name = 'wangwang';
+    }
+}
+```
+
 2. 生成实例
+```js
+// 实例化
+console.log(new Animal);
+console.log(new Animal6);
+```
 
 #### 类与继承
 1. 如何实现继承
+
 2. 继承的几种方式
+```js
+// 借助构造函数实现继承
+function Parent1() {
+    this.name = 'parent1';
+}
+function Child1() {
+    // 将父级构造函数的this指向子构造函数的this
+    Parent1.call(this);    // apply 改变函数运行上下文
+    this.type = 'child1';
+}
+var obj1 = new Child1();
+console.log(obj1);
+```
 
 ### 八、 通信类
 #### 什么是同源策略及限制
