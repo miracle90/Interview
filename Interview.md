@@ -526,14 +526,25 @@ console.log(obj1);
 * HTML4.01：严格模式和传统模式
 
 #### 浏览器是怎么渲染的
-* html ---> DOM Tree ---> render tree
-* css --- > style rules ----> render tree
+1. html ---> DOM Tree
+2. css --- > CSSOM Tree
+3. DOM Tree + CSSOM Tree 生成 render Tree
+4. render Tree + layout
 
 ![](https://camo.githubusercontent.com/d972ca8ffd7b5a7f81a83d3b04f4b8b5e48547d3/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031372f31312f312f31626338643132386536323933376363343261353532393065393937383364383f696d61676556696577322f302f772f313238302f682f3936302f666f726d61742f776562702f69676e6f72652d6572726f722f31)
 
-#### 重排reflow、重绘repaint
+#### 重排reflow
+DOM中各个元素都有自己的盒子，这些都需要浏览器根据各种样式计算并根据计算结果将元素放到它该出现的位置，这个过程称之为reflow
+
+#### 重绘repaint
+* 页面内容呈现在浏览器上
+
+触发条件：
+1. DOM改动
+2. CSS改动
 
 #### 布局layout
+计算每一个DOM的位置，宽高 
 
 ### 三、JS运行机制
 
