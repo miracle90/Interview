@@ -547,6 +547,35 @@ DOM中各个元素都有自己的盒子，这些都需要浏览器根据各种�
 计算每一个DOM的位置，宽高 
 
 ### 三、JS运行机制
+#### keywords：单线程、任务队列、同步、异步、事件循环
+
+```js
+// 同步任务和异步任务的优先顺序
+console.log('A');
+setTimeout(function () {
+    console.log('B');
+}, 0);
+while (1) {
+
+}
+```
+
+```js
+// 异步事件的放入时间和执行时间
+for (var i = 0; i < 4; i++) {
+  setTimeout(function () {
+      console.log(i);
+  }, 1000);
+}
+```
+#### JS的单线程
+
+#### 什么是任务队列
+* setTimeout、setInterval
+* DOM事件
+* Promise
+
+#### Event Loop
 
 ### 四、页面性能
 
