@@ -579,13 +579,71 @@ for (var i = 0; i < 4; i++) {
 
 ### 四、页面性能
 #### 题目：提升页面性能的方法有哪些？
-1. 资源压缩合并，减少HTTP请求
+1. 资源压缩合并（gzip压缩），减少HTTP请求
 2. 非核心代码异步加载 ---> 异步加载的方式 ---> 异步加载的区别
 3. 利用浏览器缓存 ---> 缓存的分类 ---> 缓存的原理
 4. 使用CDN
 5. 预解析DNS
 
+```html
+// DNS预解析
+<link rel="dns-prefetch" href="//host_name_to_prefetch.com">
+
+// https时，浏览器默认关闭a标签的预解析，通过下面这句话开启
+<meta http-equiv="x-dns-prefetch-control" content="on">
+```
+
+#### 异步加载
+1. 异步加载的方式
+* 动态脚本加载（document.createElement）
+* defer
+* async
+
+2. 异步加载的区别
+* defer是在html解析完之后才会执行，如果是多个，按照加载的顺序依次执行
+* async是在加载完之后立即执行，如果是多个，执行顺序和加载顺序无关
+
+#### 浏览器缓存（强缓存、协商缓存）
+1. 强缓存（绝对时间 Expires、相对时间 Cache-Control: max-age=3600）
+
+2. 协商缓存
+* Last-Modified（上次修改的时间，缺点：当修改时间变了，但内容没有变化的情况下）
+* If-Modified-Since
+* Etag
+* If-None-Match
+
 ### 五、错误监控
+#### 前端错误的分类
+1. 即时运行错误：代码错误
+2. 资源加载错误
+
+#### 错误的捕获方式
+1. 即时运行的捕获方式：try...catch、window.onerror
+2. 资源加载错误： object.onerror、performance.getEntries()、Error事件捕获
+
+* 图片、script标签的onerror事件
+* performance.getEntries()获得资源的加载时间
+* 捕获error（冒泡不行）
+
+```js
+window.addEventListener('error', function() {
+    console.log('捕获', e);
+}, true);
+```
+
+#### 跨域的js运行错误可以捕获吗，错误提示是什么？应该怎么处理？
+可以拿到，但是没有相应的具体信息
+
+1. 客户端：在script标签上增加crossorigin属性
+2. 服务端：设置js资源响应头Access-Control-Allow-Origin: *
+
+#### 上报错误的基本原理
+1. 利用ajax通信的方式上报
+2. 利用Image对象上报
+
+```js
+(new Image()).src = 'www.baidu.com/testjk?k=123';
+```
 
 ### 六、MVVM框架
 
