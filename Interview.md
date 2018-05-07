@@ -652,7 +652,32 @@ window.addEventListener('error', function() {
 5. 生命周期是什么？
 6. 看过源码吗？
 
-### 七、双向绑定、设计模式等
+#### 了解MVVM框架吗
+* M、V、VM
+* Vue、Angular、React
+
+#### MVC、MVP、MVVM的区别
+
+#### 双向数据绑定原理
+* data--->view：Object.defineProperty
+* view--->data：input事件
+
+```js
+Object.defineProperty(obj, 'key', {
+    enumerable: false,      // 是否可枚举(遍历)
+    configurable: false,    // 是否可配置
+    writable: false,        // 重新赋值
+    value: 'static',
+});
+```
+
+* Object.defineProperty和Reflect.defineProperty（返回一个boolean值）的区别
+
+#### 设计模式
+
+#### 生命周期
+
+#### 源码分析
 
 ## 三面
 ### 面试技巧
