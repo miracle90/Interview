@@ -673,11 +673,14 @@ Object.defineProperty(obj, 'key', {
 
 * Object.defineProperty和Reflect.defineProperty（返回一个boolean值）的区别
 
-#### 设计模式
+#### MVVM框架的设计模式 --- 观察者模式
+Observer、Dep、Watcher
 
 #### 生命周期
+* beforeCreate、created、beforeMount、mounted、beforeUpdate、updated、beforeDestroy、destroyed
 
 #### 源码分析
+
 
 ## 三面
 ### 面试技巧
