@@ -8,7 +8,7 @@
 
 * [template 模板是怎样通过 Compile 编译的](https://github.com/liyayun713/Interview/blob/master/vue/template-compile.md)
 
-* 数据状态更新时的差异 diff 及 patch 机制
+* [数据状态更新时的差异 diff 及 patch 机制](https://github.com/liyayun713/Interview/blob/master/vue/diff-patch.md)
 
 * 批量异步更新策略及 nextTick 原理
 
