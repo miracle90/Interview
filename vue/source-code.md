@@ -6,7 +6,7 @@
 
 * [实现 Virtual DOM 下的一个 VNode 节点](https://github.com/liyayun713/Interview/blob/master/vue/virtual-dom.md)
 
-* template 模板是怎样通过 Compile 编译的
+* [template 模板是怎样通过 Compile 编译的](https://github.com/liyayun713/Interview/blob/master/vue/template-compile.md)
 
 * 数据状态更新时的差异 diff 及 patch 机制
 
