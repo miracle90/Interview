@@ -10,7 +10,7 @@
 
 * [数据状态更新时的差异 diff 及 patch 机制](https://github.com/liyayun713/Interview/blob/master/vue/diff-patch.md)
 
-* 批量异步更新策略及 nextTick 原理
+* [批量异步更新策略及 nextTick 原理](https://github.com/liyayun713/Interview/blob/master/vue/nextTick.md)
 
 * Vuex 状态管理的工作原理
 
