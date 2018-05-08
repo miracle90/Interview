@@ -12,7 +12,7 @@
 
 * [批量异步更新策略及 nextTick 原理](https://github.com/liyayun713/Interview/blob/master/vue/nextTick.md)
 
-* Vuex 状态管理的工作原理
+* [Vuex 状态管理的工作原理](https://github.com/liyayun713/Interview/blob/master/vue/vuex-principle.md)
 
 * 总结 & 常见问题解答
 
