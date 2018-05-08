@@ -2,7 +2,7 @@
 
 * [响应式系统的基本原理](https://github.com/liyayun713/Interview/blob/master/vue/response-system.md)
 
-* 响应式系统的依赖收集追踪原理
+* [响应式系统的依赖收集追踪原理](https://github.com/liyayun713/Interview/blob/master/vue/dependence-collect.md)
 
 * 实现 Virtual DOM 下的一个 VNode 节点
 
