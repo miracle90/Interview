@@ -22,9 +22,6 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 前端注册登录流程
 * Git
 
-### MVVM框架
-* MVVM、MVC、MVP
-
 ### 浏览器
 * 浏览器发展史
 * 从输入url到页面加载的过程
@@ -166,6 +163,8 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 > [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
 
 > 专题系列
+* 源码分析
+* MVVM、MVC、MVP
 * MVVM是什么
 * 生命周期
 * vuex的作用及原理
