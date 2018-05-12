@@ -6,6 +6,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 ```
 
 
+:zap:
 :dart:
 :art:
 
@@ -35,9 +36,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 
 ### CSS
 
-:zap:
-:zap:
-:zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
+:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
 
 * CSS 有哪些样式可以给子元素继承
 * 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些
@@ -45,7 +44,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 清除浮动的方式有哪些？比较好的是哪一种？
 * 样式权重的优先级
 
-> 专题系列
+:zap::zap::zap: 专题系列
 
 * 绝对定位、浮动、表格布局
 * Flex布局
@@ -77,7 +76,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 
 ### Javascript
 
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
+:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)
 
 * JS有几种数据类型，其中基本数据类型有哪些？
 * null和undefined的差异
@@ -87,7 +86,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * JS 实现String.trim()方法
 * navigator.userAgent
 
-> 专题系列
+:zap::zap::zap: 专题系列
 
 * JS运行机制
 * [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
@@ -112,9 +111,9 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 
 ### ES6
 
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/es6.md)
+:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/es6.md)
 
-> 专题系列
+:zap::zap::zap: 专题系列
 
 * let、const
 * class
@@ -155,9 +154,10 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 快排、二分法查找
 
 ### HTML
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/html/html.md)
+:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/html/html.md)
 
-> 专题系列
+:zap::zap::zap: 专题系列
+
 * html语义化
 * HTML5新特性
 * HTML5新标签
@@ -166,9 +166,10 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 各种meta标签
 
 ### Vue
-> [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
+:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
 
-> 专题系列
+:zap::zap::zap: 专题系列
+
 * 源码分析
 * MVVM、MVC、MVP
 * MVVM是什么
