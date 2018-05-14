@@ -13,6 +13,14 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 # 知识点整理
 
 ### 项目相关
+1. 红包活动（活动描述、算法）
+2. 地图组件（高德地图）
+3. sass、less迁移到stylus（迁移原因）
+4. 模块划分（业务模块、功能模块）
+5. 移动端适配（flexible.js）
+6. vuelidate、fastclick、mint-ui、vue-lazyload、mock.js、base64位图
+7. 组件异步加载
+
 * 项目部署
 * 项目监控
 * 错误处理
