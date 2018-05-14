@@ -18,8 +18,10 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 3. sass、less迁移到stylus（迁移原因）
 4. 模块划分（业务模块、功能模块）
 5. 移动端适配（flexible.js）
-6. vuelidate、fastclick、mint-ui、vue-lazyload、mock.js、base64位图
+6. vuelidate、fastclick、mint-ui、vue-lazyload、mock.js、base64位图、wxShare（weixin-js-sdk）
 7. 组件异步加载
+8. 公共方法 util.js（深浅克隆、浮点运算、设备类型判断、url取参数、web存储）
+9. 接口单独抽出来
 
 * 项目部署
 * 项目监控
