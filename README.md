@@ -183,10 +183,13 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 1. How Virtual-DOM and diffing works in React
 
 ### Webpack
+* 如何让webpack打包的速度提升50%？
 
 ### Babel
 
 ### 小程序
+* 最新api
+* 初始化获取用户信息流程
 
 ### Node.js
 
