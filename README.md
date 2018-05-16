@@ -111,9 +111,9 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * setTimeout、setInterval原理
 * 数组去重、排序、乱序
 * 深浅拷贝
-* 作用域、this、call、apply、bind
+* ~~作用域、this、call、apply、bind~~
 * 函数柯里化
-* JS浮点数精度问题
+* ~~JS浮点数精度问题~~
 * 常用数组、字符串操作方法
 * 函数节流、防抖
 * 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
