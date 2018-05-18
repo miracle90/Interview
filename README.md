@@ -41,7 +41,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 ### 浏览器
 * 浏览器发展史
 * 从输入url到页面加载的过程
-* 浏览器缓存（强制缓存、协商缓存）
+* ~~浏览器缓存（强制缓存、协商缓存）~~
 * 浏览器渲染机制
 * 重排、重绘
 
@@ -100,7 +100,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 :zap::zap::zap: 专题系列
 
 * JS运行机制
-* [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
+* ~~[闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)~~
 * 原型、构造函数、实例、原型链
 * 如何实现继承、继承的几种方法
 * 创建对象有几种方法
