@@ -187,6 +187,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 生命周期
 * vuex的作用及原理
 * vue-router的实现
+* 双向数据绑定原理、vue-router原理、nextTick原理
 * 父子组件通讯
 * 源码考察（双向数据绑定，虚拟DOM）
 
