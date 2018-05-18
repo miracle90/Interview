@@ -134,6 +134,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 箭头函数
 * 字符串模板
 * 模块化（import、export）
+* ES6 中的 extends 和 ES5 中的 prototype 实现原理上区别
 
 ### 性能优化
 * 资源压缩合并，减少http请求
