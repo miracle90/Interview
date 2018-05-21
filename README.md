@@ -32,6 +32,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 团队协作能力和带人能力
 
 ### 综合
+* 进程与线程的区别
 * 错误监控
 * ~~web存储（session、cookie、sessionStorage、localStorage等）~~
 * 模块化（commonjs、requirejs、seajs、ES6的模块化、AMD、CMD等）
@@ -205,6 +206,8 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 初始化获取用户信息流程
 
 ### Node.js
+
+### Nginx
 
 ### 前端工程化
 
