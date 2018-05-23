@@ -15,11 +15,12 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 ### 面试重点知识总结
 * 登陆问题（cookie、session、token）
 * https
-* webpack相关
+* webpack相关（原理、优化、loader）
 * web安全
 * 跨域
 * ES6（rest语法，promise）
 * 性能优化
+* http状态码
 
 ### 项目相关
 1. 红包活动（活动描述、算法）
