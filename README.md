@@ -19,6 +19,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * web安全
 * 跨域
 * ES6（rest语法，promise）
+* 性能优化
 
 ### 项目相关
 1. 红包活动（活动描述、算法）
