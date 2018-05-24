@@ -220,6 +220,9 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 最新api
 * 初始化获取用户信息流程
 
+### Jquery
+* on 和 bind 区别，on采用事件委托，新加子元素可以，bind不行
+
 ### Node.js
 
 ### Nginx
