@@ -170,6 +170,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * POST、GET
 * http状态码
 * 谈谈你对 TCP 的理解
+* tcp、udp区别
 
 ### 前端通信
 * ajax
