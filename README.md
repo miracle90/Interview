@@ -16,7 +16,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 登陆问题（cookie、session、token）
 * https
 * webpack相关（原理、优化、loader）
-* web安全
+* web安全（xss，csrf）
 * 跨域
 * ES6（rest语法，promise）
 * 性能优化
@@ -43,13 +43,6 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 8. 公共方法 util.js（深浅克隆、浮点运算、设备类型判断、url取参数、web存储）
 9. 接口单独抽出来
 10. 埋点
-
-* 项目部署
-* 项目监控
-* 错误处理
-* 项目架构能力
-* 业务能力
-* 团队协作能力和带人能力
 
 ### 综合
 * 进程与线程的区别
