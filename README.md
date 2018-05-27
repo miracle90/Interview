@@ -17,6 +17,7 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 * 异步（promise、async）
 * http协议（tcp、https、udp、加密过程等）
 * 设计模式（观察者模式）
+* Node、CDN
 
 ### 面试重点知识总结
 * 登陆问题（cookie、session、token）
