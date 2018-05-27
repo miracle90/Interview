@@ -12,6 +12,12 @@ new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
 
 # 知识点整理
 
+### 腾讯、今日头条面试总结
+* js基础（原型、闭包、bind、函数节流等）
+* 异步（promise、async）
+* http协议（tcp、https、udp、加密过程等）
+* 设计模式（观察者模式）
+
 ### 面试重点知识总结
 * 登陆问题（cookie、session、token）
 * https
