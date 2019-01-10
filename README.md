@@ -1,17 +1,10 @@
+## 题库
+
+**大厂面试题一一破解**
+
 ```js
-new Date()    // Sun Jan 28 2018 23:54:02 GMT+0800 (CST)
-new Date()    // Mon Mar 05 2018 15:36:41 GMT+0800 (CST)
-new Date()    // Wed Apr 11 2018 08:56:14 GMT+0800 (CST)
-new Date()    // Wed May 07 2018 19:21:29 GMT+0800 (CST)
-new Date()    // Thu Jan 10 2019 10:06:23 GMT+0800 (CST)
+new Date()    // Thu Jan 10 2019 10:06:23 GMT+0800 (中国标准时间)
 ```
-
-
-:zap:
-:dart:
-:art:
-
-
 
 
 
