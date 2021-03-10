@@ -1,10 +1,50 @@
 # 题库
 
-**大厂面试题一一破解**
+### 手写题
 
-```js
-new Date()    // Thu Jan 10 2019 10:06:23 GMT+0800 (中国标准时间)
-```
+* 手写bind
+* 手写promise，基础架子，不用写all、race等api
+
+### 综合题
+
+### js
+
+### css
+
+### webpack
+
+### vue
+
+### node
+
+### web安全
+
+### 网络
+
+### 算法
+
+* 爬楼梯[https://leetcode-cn.com/problems/climbing-stairs/](https://leetcode-cn.com/problems/climbing-stairs/)尾递归优化
+* 猴子吃香蕉[https://leetcode-cn.com/problems/koko-eating-bananas/](https://leetcode-cn.com/problems/koko-eating-bananas/)
+* 回文字符串个数[https://leetcode-cn.com/problems/palindromic-substrings/](https://leetcode-cn.com/problems/palindromic-substrings/)(最长回文字符串)
+
+### 架构
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### JavaScript
 
