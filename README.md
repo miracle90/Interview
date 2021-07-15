@@ -15,6 +15,8 @@
 
 ### vue
 
+* 页面刷新后的vuex的state数据丢失怎么办?
+
 ### node
 
 ### web安全
