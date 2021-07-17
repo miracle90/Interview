@@ -5,8 +5,9 @@
 * [1、vue双向数据绑定原理](https://github.com/miracle90/Interview/blob/master/vue/1.bind-principle.md)
 * [2、vue-router原理](https://github.com/miracle90/Interview/blob/master/vue/2.router-principle.md)
 * [3、计算属性和普通属性的区别是什么？](https://github.com/miracle90/Interview/blob/master/vue/3.data-computed.md)
-* 4、Vuex和localStorage的区别是什么？
-* 5、说一下Vue的keep-alive是如何实现的，具体缓存的是什么？
+* [4、Vuex和localStorage的区别是什么？](https://github.com/miracle90/Interview/blob/master/vue/4.vuex-localstorage.md)
+* [5、说一下Vue的keep-alive是如何实现的，具体缓存的是什么？](https://github.com/miracle90/Interview/blob/master/vue/5.keep-alive.md)
+* [6、对虚拟DOM的理解？虚拟DOM主要做了什么？虚拟DOM本身是什么？](https://github.com/miracle90/Interview/blob/master/vue/6.virtual-dom.md)
 * 为什么组件中的 data 必须是一个函数，然后 return 一个对象，而 new Vue 实例里，data 可以直接是一个对象？
 * Vue 组件间通信有哪几种方式？
 * 直接给一个数组项赋值，Vue 能检测到变化吗？
