@@ -1,5 +1,129 @@
 # 题库
 
+### vue
+
+* [1、vue双向数据绑定原理](https://github.com/miracle90/Interview/blob/master/vue/1.bind-principle.md)
+* [2、vue-router原理](https://github.com/miracle90/Interview/blob/master/vue/2.router-principle.md)
+* [3、计算属性和普通属性的区别是什么？](https://github.com/miracle90/Interview/blob/master/vue/3.data-computed.md)
+* 4、Vuex和localStorage的区别是什么？
+* 5、说一下Vue的keep-alive是如何实现的，具体缓存的是什么？
+* 为什么组件中的 data 必须是一个函数，然后 return 一个对象，而 new Vue 实例里，data 可以直接是一个对象？
+* Vue 组件间通信有哪几种方式？
+* 直接给一个数组项赋值，Vue 能检测到变化吗？
+* 页面刷新后的vuex的state数据丢失怎么办?
+* 在哪个生命周期内调用异步请求？
+* 使用过 Vue SSR 吗？说说 SSR？
+* 说一下Vue 的父组件和子组件生命周期钩子函数执行顺序？
+* Vue 中的 key 有什么作用?
+* 说一下单向数流有什么好处？
+* 怎么理解 vue 的单向数据流?
+* 能说下 vue-router 中常用的 hash 和 history 路由模式实现原理吗？
+* 子组件可以直接改变父组件的数据么？说说你的理由？(vue部分)
+* 怎样理解 Vue 的单向数据流？
+* v-model是如何实现的，语法糖实际是什么？
+* 说一下Vue单页与多页的区别?
+* 说一下Vue的$nextTick原理
+* 说一下Vue template到render的过程
+* 说一下Vue的生命周期以及每个阶段做的事情
+* 你所理解的前端路由是什么?
+* 介绍下 vue-router 中的导航钩子函数
+* Vue是如何收集依赖的?
+* 说说Vue开发如何针对搜索引擎做SEO优化?
+* Vue-cli默认是单页面的，如果要开发多页面应该怎么办?
+* Vue-router history 模式部署的时候要注意什么?server 端用 nginx 和 node 时候分别怎么处理?
+* 为什么要用 vuex 或者 Redux?
+* 说一下 vuex 的原理以及自己的理解
+* vue 如何做权限校验?
+* Vuex 怎么知道 state 是通过 mutation 修改还是外部直接修改的?
+* Vue 调用 push 给数组添加元素会自动更新么?原因是什么?
+* Vuex 的 action 和 mutation 的特性是什么?有什么区别?
+* 说一下路由钩子在 vue 生命周期的体现?
+
+
+
+* vue响应式原理，什么是mvvm
+* vue原理，包括计算属性、依赖收集等等
+* 虚拟DOM
+* 双向数据绑定
+* vue-lazyloader的原理，手写伪代码
+* vue的响应式原理、依赖收集、监听数组、虚拟dom等等
+* 手写vue双向绑定
+* vue-router的原理
+* 手写vue的mixin方法
+* vue里面哪儿不会用到双向绑定
+* 对vuex的理解，单向数据流
+* 从渲染watcher到虚拟dom
+
+
+:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
+
+:zap::zap::zap: 专题系列
+
+* 源码分析
+* MVVM、MVC、MVP
+* MVVM是什么
+* 生命周期
+* vuex的作用及原理
+* vue-router的实现
+* 双向数据绑定原理、vue-router原理、nextTick原理
+* 父子组件通讯
+* 源码考察（双向数据绑定，虚拟DOM）
+
+### vue3
+
+* 说一下对vue3.0的了解，vue3.0为什么要用代理?
+* 说一下 Vue3 的 Composition API
+
+### webpack
+
+* 怎么配webpack
+* 项目中怎么用的webpack，怎么优化
+* webpack热更新原理，使用过的插件
+* 如何让webpack打包的速度提升50%？
+
+### 网络
+
+* 跨域
+* http状态码
+* websocket握手过程
+* 跨域以及解决办法
+* tcp/ip网络层、三次握手，为什么不能两次握手
+* 手写实现jsonp
+* tcp/ip网络层，http的特点
+* http强行使用udp能实现吗？
+* 写出 tcp 和 udp 协议的区别，并简单描述 tcp 连接建立和断开的过程
+
+* http、https、http2.0
+* POST、GET
+* http状态码
+* 谈谈你对 TCP 的理解
+* tcp、udp区别
+
+### 浏览器
+
+* 浏览器渲染过程
+* 回流重绘
+* load、DOMContentLoaded等等事件的触发顺序
+* * 浏览器发展史
+* 从输入url到页面加载的过程
+* 浏览器缓存（强制缓存、协商缓存）
+* 浏览器渲染机制
+* 重排、重绘
+
+### typescript
+
+* 使用TS的优势有哪些?
+
+### 性能优化
+
+* 1、请问如何进行首页加载优化?
+* 资源压缩合并，减少http请求
+* 非核心代码异步加载（defer、async）
+* 浏览器缓存
+* 使用CDN
+* 预解析DNS
+* 懒加载、预加载
+
 ### 手写题
 
 * 手写bind
@@ -11,17 +135,10 @@
 
 ### css
 
-### webpack
-
-### vue
-
-* 页面刷新后的vuex的state数据丢失怎么办?
-
 ### node
 
 ### web安全
 
-### 网络
 
 ### 算法
 
@@ -30,22 +147,6 @@
 * 回文字符串个数[https://leetcode-cn.com/problems/palindromic-substrings/](https://leetcode-cn.com/problems/palindromic-substrings/)(最长回文字符串)
 
 ### 架构
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### JavaScript
@@ -86,45 +187,6 @@
 * 实现一个事件发布订阅类，其实就是eventEmitter
 * 画图表达 nodejs 的时间循环的工作流程
 
-### Vue
-
-* vue响应式原理，什么是mvvm
-* vue原理，包括计算属性、依赖收集等等
-* 虚拟DOM
-* 双向数据绑定
-* vue-lazyloader的原理，手写伪代码
-* vue的响应式原理、依赖收集、监听数组、虚拟dom等等
-* 手写vue双向绑定
-* vue-router的原理
-* 手写vue的mixin方法
-* vue里面哪儿不会用到双向绑定
-* 对vuex的理解，单向数据流
-* 从渲染watcher到虚拟dom
-
-### webpack
-
-* 怎么配webpack
-* 项目中怎么用的webpack，怎么优化
-* webpack热更新原理，使用过的插件
-
-### 浏览器
-
-* 浏览器渲染过程
-* 回流重绘
-* load、DOMContentLoaded等等事件的触发顺序
-
-### 网络
-
-* 跨域
-* http状态码
-* websocket握手过程
-* 跨域以及解决办法
-* tcp/ip网络层、三次握手，为什么不能两次握手
-* 手写实现jsonp
-* tcp/ip网络层，http的特点
-* http强行使用udp能实现吗？
-* 写出 tcp 和 udp 协议的区别，并简单描述 tcp 连接建立和断开的过程
-
 ### 设计模式
 
 * 实现一个发布订阅系统，包括on、emit、off等等
@@ -149,8 +211,6 @@
 
 
 --------------------------------------------------- 分割线 -------------------------------------------------------
-
-
 
 
 
@@ -205,13 +265,6 @@
 * 模块化（commonjs、requirejs、seajs、ES6的模块化、AMD、CMD等）
 * 前端注册登录流程
 * Git
-
-### 浏览器
-* 浏览器发展史
-~~* 从输入url到页面加载的过程~~
-* ~~浏览器缓存（强制缓存、协商缓存）~~
-~~* 浏览器渲染机制~~
-* 重排、重绘
 
 ### CSS
 
@@ -304,21 +357,6 @@
 * 模块化（import、export）
 * ES6 中的 extends 和 ES5 中的 prototype 实现原理上区别
 
-### 性能优化
-* 资源压缩合并，减少http请求
-* 非核心代码异步加载（defer、async）
-* 浏览器缓存
-* 使用CDN
-* 预解析DNS
-* 懒加载、预加载
-
-### HTTP协议
-* http、https、http2.0
-* POST、GET
-* http状态码
-* 谈谈你对 TCP 的理解
-* tcp、udp区别
-
 ### 前端通信
 * ajax
 * 跨域
@@ -346,26 +384,8 @@
 * doctype
 * 各种meta标签
 
-### Vue
-:zap::zap::zap: [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
-
-:zap::zap::zap: 专题系列
-
-* 源码分析
-* MVVM、MVC、MVP
-* MVVM是什么
-* 生命周期
-* vuex的作用及原理
-* vue-router的实现
-* 双向数据绑定原理、vue-router原理、nextTick原理
-* 父子组件通讯
-* 源码考察（双向数据绑定，虚拟DOM）
-
 ### React
 1. How Virtual-DOM and diffing works in React
-
-### Webpack
-* 如何让webpack打包的速度提升50%？
 
 ### Babel
 
