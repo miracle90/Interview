@@ -1,6 +1,17 @@
-# 题库
+# Vue
 
-### vue
+### 专题
+
+* 生命周期
+* 组件通信
+* 双向数据绑定原理
+* vue-router
+* vuex
+* diff算法
+* 虚拟DOM
+* MVVM、MVC
+
+### 题目
 
 * [1、vue双向数据绑定原理](https://github.com/miracle90/Interview/blob/master/vue/1.bind-principle.md)
 * [2、vue-router原理](https://github.com/miracle90/Interview/blob/master/vue/2.router-principle.md)
@@ -75,33 +86,44 @@
 * 说一下对vue3.0的了解，vue3.0为什么要用代理?
 * 说一下 Vue3 的 Composition API
 
-### webpack
+# 网络
 
-* 怎么配webpack
-* 项目中怎么用的webpack，怎么优化
-* webpack热更新原理，使用过的插件
-* 如何让webpack打包的速度提升50%？
+### 专题
 
-### 网络
+* 七层网络协议
+* TCP、UDP
+* HTTP
+* HTTPS
+* HTTP2、HTTP3
+* CDN
+* DNS
+* websocket
+* IP
 
-* 跨域
+### 题目
+
 * http状态码
 * websocket握手过程
-* 跨域以及解决办法
 * tcp/ip网络层、三次握手，为什么不能两次握手
-* 手写实现jsonp
 * tcp/ip网络层，http的特点
 * http强行使用udp能实现吗？
 * 写出 tcp 和 udp 协议的区别，并简单描述 tcp 连接建立和断开的过程
-
 * http、https、http2.0
 * POST、GET
 * http状态码
 * 谈谈你对 TCP 的理解
 * tcp、udp区别
 
-### 浏览器
+# webpack
 
+* 怎么配webpack
+* 项目中怎么用的webpack，怎么优化
+* webpack热更新原理，使用过的插件
+* 如何让webpack打包的速度提升50%？
+
+# 浏览器
+
+* 跨域
 * 浏览器渲染过程
 * 回流重绘
 * load、DOMContentLoaded等等事件的触发顺序
@@ -111,11 +133,11 @@
 * 浏览器渲染机制
 * 重排、重绘
 
-### typescript
+# typescript
 
 * 使用TS的优势有哪些?
 
-### 性能优化
+# 性能优化
 
 * 1、请问如何进行首页加载优化?
 * 资源压缩合并，减少http请求
@@ -125,8 +147,9 @@
 * 预解析DNS
 * 懒加载、预加载
 
-### 手写题
+# 手写题
 
+* 手写实现jsonp
 * 手写bind
 * 手写promise，基础架子，不用写all、race等api
 
