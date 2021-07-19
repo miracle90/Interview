@@ -1,3 +1,18 @@
+```
+进阶顺序
+1、网络
+2、vue
+3、浏览器
+4、webpack
+5、node
+web安全
+js
+css
+html
+性能优化
+数据结构和算法
+```
+
 # Vue
 
 ### 专题
@@ -81,10 +96,24 @@
 * 父子组件通讯
 * 源码考察（双向数据绑定，虚拟DOM）
 
+* [this.$set()原理](https://blog.csdn.net/XuM222222/article/details/99942522)
+* 对MVC （react） MVVM（vue）的了解
+* vue中nextTick的实现，结合浏览器事件循环机制说一下？
+* 怎么看待virtual dom？
+* ast语法树了解吗？
+* vue-loader做了哪些事情？
+* vue diff？
+* vue computed和watch区别？
+* computed怎么实现的缓存（dirty）？
+* vue3双向数据绑定实现？
+* createRender？和vue2有哪些不同
+* 说下对函数式编程对的理解
+
 ### vue3
 
 * 说一下对vue3.0的了解，vue3.0为什么要用代理?
 * 说一下 Vue3 的 Composition API
+* Vue3 为什么改为用 Proxy 监听数据，你能说出个条条框框？
 
 # 网络
 
@@ -102,6 +131,25 @@
 
 ### 题目
 
+* HTTP请求特征是什么？
+* CDN有哪些优化静态资源加载速度的机制？
+* 与HTTP相关的协议有哪些？TCP/IP DNS URI/URL HTTPS
+* 说一下你理解的 HTTPS 中间人攻击 ?
+* CDN 访问过程是什么？
+* 说一下ajax/axios/fetch三者的区别
+* SSL 连接断开后如何恢复 ?
+* 什么是 CDN 服务?
+* cdn分布式部署，如果处理用户请求最近的资源？
+* DNS 解析的具体过程
+* get请求传参长度存在限制，是http协议限制的么?
+* 说一下get、post、put的区别
+* 请求在客户端报413是什么错误,怎么解决呢?
+* WebSocket 如何断开重连?
+* 请解释下 http 中所有请求方法
+* 说一下网络通信中引入滑动窗口的作用
+* 说一下 http2 的特性，http2 怎么确保文件同时传输不会报错?
+
+* 跨域
 * http状态码
 * websocket握手过程
 * tcp/ip网络层、三次握手，为什么不能两次握手
@@ -116,12 +164,35 @@
 
 # webpack
 
+### 专题
+
+* 常用配置
+
+### 题目
+
 * 怎么配webpack
 * 项目中怎么用的webpack，怎么优化
 * webpack热更新原理，使用过的插件
 * 如何让webpack打包的速度提升50%？
+* 用过哪些loader？plugin？
+* 自己的插件实现了什么？怎么实现的？
+* sourcemap原理？
 
 # 浏览器
+
+* 简单请求？跨域？
+* http和tcp协议
+* https
+* tcp/udp
+* HTTP2.0/HTTP3.0（队头阻塞？解决了哪些问题？哪有哪些问题未解决？）
+
+### websocket
+
+* websocket的使用场景（socket.io降级）？
+
+### Service Worker、Web Worker
+
+### 浏览器
 
 * 跨域
 * 浏览器渲染过程
@@ -155,11 +226,35 @@
 
 ### 综合题
 
+* 说一下从url输入到返回请求的过程
+* 缓存相关（对比缓存？强缓存？对应请求头）cookie有哪些属性？
+* 说说commonjs和esmodule？
+* 模块化
+* 懒加载（不在可视区域的资源可以延迟加载，监听滚轮，采用节流来防止函数被高频触发）
+* 跨域
+
+### 架构
+
+* 团队协作，以前的开发流程？
+
 ### js
+
+* 常见原生api的使用
+* 基本数据类型和引用类型
+* es6中的set（集合）和map（字典）的使用和对应的数据结构
+* sort的实现，内部用的插入排序和快速排序（根据排序的量级用不同的方法）
+* 说一下原型链，原型链实现继承
 
 ### css
 
+* bfc布局规则
+* 项目怎么做的移动端适配？flexible原理（1px问题，通过viewport）
+
 ### node
+
+* node的事件循环机制？
+* stream两种模式的区别？
+* 看过koa源码都会觉得和express有很大不同，说一下？
 
 ### web安全
 
@@ -169,8 +264,6 @@
 * 爬楼梯[https://leetcode-cn.com/problems/climbing-stairs/](https://leetcode-cn.com/problems/climbing-stairs/)尾递归优化
 * 猴子吃香蕉[https://leetcode-cn.com/problems/koko-eating-bananas/](https://leetcode-cn.com/problems/koko-eating-bananas/)
 * 回文字符串个数[https://leetcode-cn.com/problems/palindromic-substrings/](https://leetcode-cn.com/problems/palindromic-substrings/)(最长回文字符串)
-
-### 架构
 
 
 ### JavaScript
@@ -266,6 +359,7 @@
 * 原码、反码、补码
 
 ### 实际开发中遇到的一些问题
+
 * webpack配置问题
 * ios 上的兼容问题
 * 业务逻辑复杂问题
@@ -389,6 +483,12 @@
 ### web安全
 * XSS
 * CSRF
+* 摘要算法和对称加密、非对称加密
+* 摘要和加密的区别？
+* 常见哪些加密算法？
+* 前端安全防范措施？xss攻击和csrf攻击？
+* dns劫持？
+
 
 ### 前端算法
 * 排序
@@ -416,6 +516,8 @@
 ### 小程序
 * 最新api
 * 初始化获取用户信息流程
+* 你写过小程序，说下和写vue有什么区别？
+* 然后我说setData会有性能问题（react中setState会有这个问题吗？又给自己挖坑了） 说下jsbrige？
 
 ### Jquery
 * on 和 bind 区别，on采用事件委托，新加子元素可以，bind不行
