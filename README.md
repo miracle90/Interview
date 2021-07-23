@@ -24,7 +24,9 @@ html
 
 ### 相关专题
 
-
+* 介绍下Set、Map、WeakSet 和 WeakMap 的区别？
+* 什么是防抖和节流？有什么区别？如何实现？
+* reduce的使用
 * 模块化：说说commonjs和esmodule？
 * 常见原生api的使用
 * 基本数据类型和引用类型
@@ -55,6 +57,7 @@ html
 
 ### 异步
 
+* Promise 构造函数是同步执行还是异步执行，那么 then 方法呢？
 * JavaScript异步的处理方式(回调、promise、generator、async)
 * 手写promise的all方法
 * 手写实现promise
@@ -132,6 +135,7 @@ html
 * [4、Vuex和localStorage的区别是什么？](https://github.com/miracle90/Interview/blob/master/vue/4.vuex-localstorage.md)
 * [5、说一下Vue的keep-alive是如何实现的，具体缓存的是什么？](https://github.com/miracle90/Interview/blob/master/vue/5.keep-alive.md)
 * [6、对虚拟DOM的理解？虚拟DOM主要做了什么？虚拟DOM本身是什么？](https://github.com/miracle90/Interview/blob/master/vue/6.virtual-dom.md)
+* 写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？
 * 为什么组件中的 data 必须是一个函数，然后 return 一个对象，而 new Vue 实例里，data 可以直接是一个对象？
 * Vue 组件间通信有哪几种方式？
 * 直接给一个数组项赋值，Vue 能检测到变化吗？
