@@ -117,3 +117,7 @@ console.log(toAcceptKey(webSocketKey)); // aWAY+V/uyz5ILZEoWuWdxjnlb7E=
 ```
 
 # 4.数据帧格式
+
+* WebSocket客户端、服务端通信的最小单位是帧，由1个或多个帧组成一条完整的消息（message）
+* 发送端 将消息切割成多个帧，并发送给服务端
+* 接收端 接收消息帧，并将关联的帧重新组装成完整的消息

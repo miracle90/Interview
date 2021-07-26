@@ -24,8 +24,8 @@
       // socket.send(`客户端收到的message：${event.data}`)
     }
     function send() {
-
       let value = text.value
+      socket.send(value)
       text.value = ''
     }
   </script>
