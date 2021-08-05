@@ -350,6 +350,7 @@ html
 * 手写实现jsonp
 * 手写bind
 * 手写promise，基础架子，不用写all、race等api
+* 手写节流、防抖
 
 # 架构
 
@@ -375,6 +376,8 @@ html
 # 计算机基础
 
 * 操作系统发生死锁的原因及如何避免死锁
+* uncode utf 编解码的原理和不同
+* base64 二进制的不同
 
 # 应用专题
 
@@ -451,7 +454,6 @@ html
 * Grid布局
 * 标准盒模型 + IE盒模型
 * js获取盒模型的宽高（几种获取元素距离、长度的方法）
-* BFC
 * css实现一个三角线、扇形、正方体
 * 各种居中方案
 * 各种经典布局（双飞翼、圣杯）
@@ -466,12 +468,11 @@ html
 * px、em、rem、viewport对比
 * less、sass、stylus区别
 * @import 和 link 的区别
-* bfc布局规则
+* BFC是什么？bfc布局规则
 * 项目怎么做的移动端适配？flexible原理（1px问题，通过viewport）
 * css选择器的优先级
 * css实现图片自适应宽高
 * flex，flex常用属性，以及相关作用
-* BFC是什么
 
 ### [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
 
@@ -510,6 +511,8 @@ html
 
 # 跨平台
 
+* react-native/weex与flutter区别
+* js如何与webview交互
 * 有接触过哪些移动端跨平台框架？说下jsBridge？
 * 说下react-native的原理，原生端和js端是怎么通信的？
 * flutter有了解过吗？为什么说它的性能可以媲美原生？它有什么缺点吗？
