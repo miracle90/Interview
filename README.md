@@ -542,6 +542,17 @@ html
 
 # 前端工程化
 
+# 工具链
+
+* 浏览器（performance、memory）
+* tinyPNG
+* can i use
+* postman
+* 抓包 => Charles
+* 内存测试 => PerfDog
+* Wireshark => 网络封包分析软件
+* 耗电测试
+
 # 项目
 
 * 工作中遇到过的最难的问题是什么？最后解决了吗？怎么解决的？现在觉得有没有更好的解决方案？
