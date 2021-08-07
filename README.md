@@ -354,6 +354,7 @@ html
 * 手写实现jsonp
 * 手写bind
 * 手写promise，基础架子，不用写all、race等api
+* 手写节流、防抖
 
 # 架构
 
@@ -379,6 +380,8 @@ html
 # 计算机基础
 
 * 操作系统发生死锁的原因及如何避免死锁
+* uncode utf 编解码的原理和不同
+* base64 二进制的不同
 
 # 应用专题
 
@@ -424,6 +427,8 @@ html
 
 ### 项目相关
 
+* 对于企业内部中台系统的架构方案，也没有问一些具体的技术细节
+
 1. 红包活动（活动描述、算法）
 2. 地图组件（高德地图）
 3. sass、less迁移到stylus（迁移原因）
@@ -453,7 +458,6 @@ html
 * Grid布局
 * 标准盒模型 + IE盒模型
 * js获取盒模型的宽高（几种获取元素距离、长度的方法）
-* BFC
 * css实现一个三角线、扇形、正方体
 * 各种居中方案
 * 各种经典布局（双飞翼、圣杯）
@@ -468,12 +472,11 @@ html
 * px、em、rem、viewport对比
 * less、sass、stylus区别
 * @import 和 link 的区别
-* bfc布局规则
+* BFC是什么？bfc布局规则
 * 项目怎么做的移动端适配？flexible原理（1px问题，通过viewport）
 * css选择器的优先级
 * css实现图片自适应宽高
 * flex，flex常用属性，以及相关作用
-* BFC是什么
 
 ### [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
 
@@ -512,6 +515,8 @@ html
 
 # 跨平台
 
+* react-native/weex与flutter区别
+* js如何与webview交互
 * 有接触过哪些移动端跨平台框架？说下jsBridge？
 * 说下react-native的原理，原生端和js端是怎么通信的？
 * flutter有了解过吗？为什么说它的性能可以媲美原生？它有什么缺点吗？
@@ -524,6 +529,10 @@ html
 # Electron
 
 # 小程序
+
+* 生命周期
+* 架构原理
+* 微信授权流程
 * 最新api
 * 初始化获取用户信息流程
 * 你写过小程序，说下和写vue有什么区别？
@@ -536,6 +545,17 @@ html
 # pwa
 
 # 前端工程化
+
+# 工具链
+
+* 浏览器（performance、memory）
+* tinyPNG
+* can i use
+* postman
+* 抓包 => Charles
+* 内存测试 => PerfDog
+* Wireshark => 网络封包分析软件
+* 耗电测试
 
 # 项目
 
