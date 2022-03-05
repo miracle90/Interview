@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script>
+      // 模拟 Vue的data
+      let data = {
+        msg: "哈哈",
+        age: "18",
+      };
+      // 模拟 Vue 实例
+      let vm = {};
+      // 把多个属性转化 响应式
+      function proxyData() {
+        // 把data 中每一项都[msg,age] 拿出来操作
+        Object.keys(data).forEach((key) => {
+          // 对 vm 的 属性 进行数据劫持
+          Object.defineProperty(vm, key, {
+            // 可枚举
+            enumerable: true,
+            // 可配置
+            configurable: true,
+            // 获取数据
+            get() {
+              return data[key];
+            },
+            // 设置 属性值
+            set(newValue) {
+              // 如果传入的值相等就不用修改
+              if (newValue === data[key]) return;
+              // 修改数据
+              data[key] = newValue;
+              document.querySelector("#app").textContent = data[key];
+            },
+          });
+        });
+      }
+      // 调用方法
+      proxyData(data);
+      vm.msg = "msg";
+      vm.age = "10";
+    </script> -->
+
+    <!-- <script>
+      // 模拟 Vue data
+      let data = {
+        msg: "",
+        age: "",
+      };
+      // 模拟 Vue 的一个实例
+      // Proxy 第一个
+      let vm = new Proxy(data, {
+        // get() 获取值
+        // target 表示需要代理的对象这里指的就是 data
+        // key 就是对象的 键
+        get(target, key) {
+          return target[key];
+        },
+        // 设置值
+        // newValue 是设置的值
+        set(target, key, newValue) {
+          // 也先判断下是否和之前的值一样 节省性能
+          if (target[key] === newValue) return;
+          // 进行设置值
+          target[key] = newValue;
+          document.querySelector("#app").textContent = target[key];
+        },
+      });
+      // 触发了set方法
+      vm.msg = "haha";
+      // 触发了get方法
+      console.log(vm.msg);
+    </script> -->
+
+    <!-- <script>
+      class Vue {
+        constructor() {
+          // 用来存储事件
+          // 存储的 例子 this.subs = { 'myclick': [fn1, fn2, fn3] ,'inputchange': [fn1, fn2] }
+          this.subs = {};
+        }
+        // 实现 $on 方法 type是任务队列的类型 ,fn是方法
+        $on(type, fn) {
+          // 判断在 subs是否有当前类型的 方法队列存在
+          if (!this.subs[type]) {
+            // 没有就新增一个 默认为空数组
+            this.subs[type] = [];
+          }
+          // 把方法加到该类型中
+          this.subs[type].push(fn);
+        }
+        // 实现 $emit 方法
+        $emit(type) {
+          debugger
+          // 首先得判断该方法是否存在
+          if (this.subs[type]) {
+            // 获取到参数
+            const args = Array.prototype.slice.call(arguments, 1);
+            // 循环队列调用 fn
+            this.subs[type].forEach((fn) => fn(...args));
+          }
+        }
+      }
+
+      // 使用
+      const eventHub = new Vue();
+      // 使用 $on 添加一个 sum 类型的 方法到 subs['sum']中
+      eventHub.$on("sum", function () {
+        console.log('+++++++++++++++')
+        let count = [...arguments].reduce((x, y) => x + y);
+        console.log(count);
+      });
+
+      eventHub.$on("sum", function () {
+        console.log('~~~~~~~~~~~~~~~')
+      });
+      // 触发 sum 方法
+      eventHub.$emit("sum", 1, 2, 4, 5, 6, 7, 8, 9, 10);
+    </script> -->
+
+    <script>
+      /**
+       * 与发布订阅模式不同 
+       * 观察者模式中，发布者和订阅者(观察者)是相互依赖的
+       * 必须要求观察者订阅内容改变事件
+       * 而发布订阅者是由调度中心进行调度
+       * */
+      class Subject {
+        constructor() {
+          this.observerLists = [];
+        }
+        // 添加观察者
+        addObs(obs) {
+          // 判断观察者是否有 和 存在更新订阅的方法
+          if (obs && obs.update) {
+            // 添加到观察者列表中
+            this.observerLists.push(obs);
+          }
+        }
+        // 通知观察者
+        notify() {
+          debugger
+          this.observerLists.forEach((obs) => {
+            // 每个观察者收到通知后 会更新事件
+            obs.update();
+          });
+        }
+        // 清空观察者
+        empty() {
+          this.subs = [];
+        }
+      }
+
+      class Observer {
+        // 定义观察者内容更新事件
+        update() {
+          // 在更新事件要处理的逻辑
+          console.log("目标更新了");
+        }
+      }
+
+      // 使用
+      // 创建目标
+      let sub = new Subject();
+      // 创建观察者
+      let obs1 = new Observer();
+      let obs2 = new Observer();
+      // 把观察者添加到列表中
+      sub.addObs(obs1);
+      sub.addObs(obs2);
+      // 目标开启了通知 每个观察者者都会自己触发 update 更新事件
+      sub.notify();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>12</div>
+    <script>
+      // var myTask = `
+      //   onmessage = function(e) {
+      //     var data = e.data
+      //     console.log('worker', e.data)
+      //     data.push('hello')
+      //     postMessage(data)
+      //   }
+      // `;
+
+      // var blob = new Blob([myTask]);
+      // var myWorker = new Worker(window.URL.createObjectURL(blob));
+      // myWorker.onmessage = function (e) {
+      //   var data = e.data;
+      //   console.log("主线程", data);
+      // };
+
+      // var arr = [1, 2, 3];
+      // myWorker.postMessage(arr);
+
+      var uInt8Array = new Uint8Array(1024 * 1024 * 32); // 32MB
+      for (var i = 0; i < uInt8Array.length; ++i) {
+        uInt8Array[i] = i;
+      }
+
+      console.log(uInt8Array.length); // 传递前长度:33554432
+
+      var myTask = `
+        onmessage = function (e) {
+          var data = e.data;
+          console.log('worker:', data);
+        };
+      `;
+
+      var blob = new Blob([myTask]);
+      var myWorker = new Worker(window.URL.createObjectURL(blob));
+      myWorker.postMessage(uInt8Array.buffer, [uInt8Array.buffer]);
+      console.log(uInt8Array.length); // 传递后长度:0
+    </script>
+  </body>
+</html>

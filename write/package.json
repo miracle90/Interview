@@ -1,0 +1,12 @@
+{
+  "name": "write",
+  "version": "1.0.0",
+  "main": "19.promise-resource.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "promises-aplus-tests 19.promise-resource"
+  },
+  "devDependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}

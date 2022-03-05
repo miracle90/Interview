@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="counter">
+      <p>Counter: {{ age }}</p>
+      <p>year: {{ year }}</p>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="module">
+      //       随着功能的增长，复杂组件的代码变得越来越难以维护。 尤其发生你去新接手别人的代码时。 根本原因是 Vue 的现有 API 通过「选项」组织代码，但是在大部分情况下，通过逻辑考虑来组织代码更有意义。
+      // 缺少一种比较「干净」的在多个组件之间提取和复用逻辑的机制。
+      // 类型推断不够友好。
+
+      // vue3新特性
+      // 1、composition api
+
+      // teleport传送
+      // 即希望继续在组件内部使用Dialog, 又希望渲染的 DOM 结构不嵌套在组件的 DOM 中
+
+      // suspense
+      // default、fallback
+
+      // Fragment
+
+      // tree-shaking
+      // import { nextTick } from "vue";
+      // nextTick(() => {});
+
+      // slot 具名插槽语法
+      // 在 Vue3.0 中将slot和slot-scope进行了合并同意使用
+
+      // 自定义指令，钩子函数修改，更加语义化
+
+
+      // 异步组件
+      // Vue3 中 使用 defineAsyncComponent 定义异步组件，配置选项 component 替换为 loader ,Loader 函数本身不再接收 resolve 和 reject 参数，且必须返回一个 Promise，
+
+
+
+
+      const {
+        defineComponent,
+        reactive,
+        watch,
+        watchEffect,
+        ref,
+        toRefs,
+        computed,
+        onBeforeMount,
+        onMounted,
+        onBeforeUpdate,
+        onUpdated,
+        onBeforeUnmount,
+        onUnmounted,
+        onActivated,
+        onDeactivated,
+        onErrorCaptured,
+        onRenderTracked,
+        onRenderTriggered,
+      } = Vue;
+
+      const Counter = {
+        // beforeCreate和created是vue2的
+        beforeCreate() {
+          console.log("------beforeCreate-----");
+        },
+        created() {
+          console.log("------created-----");
+        },
+        setup() {
+          const year = ref(0);
+          const state = reactive({ nickname: "xiaofan", age: 20 });
+
+          let inter = setInterval(() => {
+            if (state.age === 25) {
+              clearInterval(inter);
+              inter = null;
+            }
+            state.age++;
+            year.value++;
+          }, 1000);
+
+          // watch(year, (newVal, oldVal) => {
+          //   console.log("新值:", newVal, "老值:", oldVal);
+          // });
+          // // 修改age值时会触发 watch的回调
+          // watch(
+          //   () => state.age,
+          //   (curAge, preAge) => {
+          //     console.log("新值:", curAge, "老值:", preAge);
+          //   }
+          // );
+
+          // 监听多个
+          const stopWatchRoom = watch(
+            [() => state.age, year],
+            ([curAge, newVal], [preAge, oldVal]) => {
+              console.log("新值:", curAge, "老值:", preAge);
+              console.log("新值:", newVal, "老值:", oldVal);
+            },
+            { deep: true }
+          );
+
+          // watchEffect 不需要手动传入依赖
+          // watchEffect 会先执行一次用来自动收集依赖
+          // watchEffect 无法获取到变化前的值， 只能获取变化后的值
+          watchEffect(() => {
+            console.log("~~~~~~~~~~~~~~~~~");
+            console.log(state);
+            console.log(year);
+          });
+
+          setTimeout(() => {
+            stopWatchRoom();
+          }, 5000);
+
+          console.log("------setup-----");
+          // vue3.x生命周期写在setup中
+          onBeforeMount(() => {
+            console.log("------onBeforeMount-----");
+          });
+          onMounted(() => {
+            console.log("------onMounted-----");
+          });
+          onBeforeUpdate(() => {
+            console.log("------onBeforeUpdate-----");
+          });
+          onUpdated(() => {
+            console.log("------onUpdated-----");
+          });
+          onBeforeUnmount(() => {
+            console.log("------onBeforeUnmount-----");
+          });
+          onUnmounted(() => {
+            console.log("------onUnmounted-----");
+          });
+          onActivated(() => {});
+          onDeactivated(() => {});
+          // 调试哪些数据发生了变化
+          onRenderTriggered((event) => {
+            console.log("------onRenderTriggered-----", event);
+          });
+          onRenderTracked((event) => {
+            console.log("------onRenderTracked-----", event);
+          });
+          onErrorCaptured((event) => {
+            console.log("------onErrorCaptured-----", event);
+          });
+          return {
+            year,
+            ...toRefs(state),
+          };
+        },
+      };
+
+      Vue.createApp(Counter).mount("#counter");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="text" oninput="inputFn(this.value)" />
+    <div id="div"></div>
+    <script>
+      const i = document.querySelector("#text");
+      const div = document.querySelector("#div");
+      const data = {
+        text: "text",
+        obj: {
+          key: '999'
+        },
+        arr: [1, 2, 3]
+      };
+      const p = new Proxy(data, {
+        set: (target, key, newValue) => {
+          console.log("set", target, key, newValue);
+          target[key] = newValue
+          if (key === 'text') {
+            div.innerHTML = newValue
+            i.value = newValue
+          }
+        },
+        get: (target, key) => {
+          console.log("get", target, key);
+          return target[key];
+        },
+      });
+      function inputFn(value) {
+        // 触发set
+        p.text = value
+      }
+      p.text = 'aaaaaa'
+      // 修改属性值为对象的key，或者数组，不会触发set？
+      p.obj.key = '888'
+      // p.obj.newKey = '666'
+      // p.arr[1] = 0
+      console.log('result ', data)
+
+      // Object.defineProperty(data, "text", {
+      //   enumerable: true,
+      //   configurable: true,
+      //   set: (newValue) => {
+      //     console.log("set", newValue);
+      //     div.innerHTML = newValue
+      //     i.value = newValue
+      //   },
+      //   get: () => {
+      //     console.log("get");
+      //   },
+      // });
+      // // 触发get
+      // console.log(data.text)
+      // function inputFn(value) {
+      //   // 触发set
+      //   data.text = value;
+      // }
+      // setTimeout(() => {
+      //   // 触发set
+      //   data.text = new Date().getTime()
+      // }, 2000);
+    </script>
+  </body>
+</html>
