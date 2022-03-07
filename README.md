@@ -1,850 +1,229 @@
+---
+theme: cyanosis
+---
 # 螺丝拧得好，火箭少不了
 
-🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+芜湖，起飞！🚀🚀🚀
+
+> ### 目录
+> 
+> 1. 应用专题
+> 1. 手写题
+> 1. html/css
+> 1. js
+> 1. ts
+> 1. 移动端
+> 1. 微信小程序
+> 1. node
+> 1. 数据结构/算法
+> 1. webpack
+> 1. 网络
+> 1. 浏览器
+> 1. web安全
+> 1. vue
+> 1. react
+> 1. 性能优化
+> 1. 跨端
+> 1. 数据库
+> 1. nginx
+> 1. 设计模式
+> 1. 前端监控
+> 1. 浏览器插件
+> 1. 脚手架
+> 1. 团队、项目、架构、管理
+> 1. 开放题目
+
+# 应用专题
+
+1. [大文件的分片上传、断点续传及其相关拓展](https://juejin.cn/post/7071877982574346277)
+1. [后端一次给你XX万条数据，除了干一架之外就没别的办法了吗？](https://juejin.cn/post/7071979844115890206)
+1. [虚拟列表是什么?说一下它的实现原理?](https://juejin.cn/post/7071993460261126152)
+1. Promise并发控制
+1. 前端导出Excel文件过于庞大怎么处理
+1. oauth2.0轻量与完整实现原理
+1. mock方案，能够设计出满足各种场景需要的mock数据方案，同时能说出对前后端分离的理解。考虑mock方案的通用性、场景覆盖度，以及代码或工程侵入程度
+1. 埋点方案，能够说明白前端埋点方案技术底层实现，以及技术选型原理。能够设计出基于埋点的数据采集和分析方案，关键字包括：分桶策略，采样率，时序性，数据仓库，数据清洗等。
+1. 说下你对前端工程化的理解
+1. 说一下实现骨架屏的方案？具体思路？
+1. 有没有搭建过 CI/CD?说下 CI/CD 搭建的流程?
+1. 如果一个页面突然出现一段广告，可能是什么原因，怎么解决?
+1. 前端怎样做单元检测?
+1. 单元测试如何测试?代码覆盖率如何?
+1. 页面埋点怎么实现?
+1. 请说明JS进行压缩、合并、打包实现的原理是什么?为什么需要压缩、合并、打包?
+1. 组件库设计有什么原则呢?
+1. 说一下对 URL 进行编码/解码的实现方式?
+1. utf-8 和 asc 码有什么区别?
+1. 说一下Taro的编译原理
+1. 设计搜索组件(具有自动补全功能组件)，你需要考虑的问题是什么?
+1. 说一下对 ESLint 的了解? 如何使用? 它的工作原理?
+1. PWA 是什么,对 PWA 有什么了解?
+1. 对 to B 和 to C 的业务的理解?
+1. 是否了解 glob 库，glob 是如何处理文件的?是否有别的方法?
+1. 如何做工程上的优化?
+1. 说一下进程和线程的区别?
+1. 简单描述静态链接和动态链接的区别，并举例说明
+1. 什么是死锁?
+1. 微服务和单体应用的区别是什么？
+1. 什么是微服务？
+1. 用微服务有什么好处？
+1. 实现单点登录的原理
+1. 扫描二维码登录网页是什么原理，前后两个事件是如何联系的?
+1. 项目如何管理模块？
+1. 说一下错误监控的实现，错误监控的正确使用方式，日志如何分等级?
+1. 封装公共组件需要注意什么?
+1. 说出前端框架设计模式(MVVM 或 MVP 或 MVC)的含义以及原理
+1. 说一下事件循环机制(node 浏览器)
+1. 前端灰度发布
+
+# 手写题
+
+1. LazyMan
+1. 防抖节流
+1. 实现一个 compose 函数
+1. 大数相加
+
+# 数据结构/算法
+
+1. 二分查找
+1. 写一个 LRU 缓存函数
+1. 排序
+1. 两个栈实现一个队列
+1. 输入两个数组 [1,2,3,2,1], [3,2,1,4,7]  返回公共的并且长度最长子数组的长度
+
+# HTML/CSS
+
+
+# JavaScript
+
+1. requestAnimationFram 与 requestIdleCallback 的区别
+1. 语义化标签，history api，storage，ajax2.0等。
+1. 文档流，重绘重排，flex，BFC，IFC，before/after，动画，keyframe，画三角，优先级矩阵等
+1. 数组常用api，reduce、map。。。
+1. event loop原理？宏微任务？为什么要区分？node和浏览器在实现loop时候的差别？
+1. 继承、作用域、闭包、模块。。。概念融汇贯通
+1. axios或同级别网络请求库，知道axios的核心功能。
+1. xhr用法
+1. 知道网络请求相关技术和技术底层，包括但不限于：
+1. content-type，不同type的作用
+1. restful设计理念；
+1. cors处理方案，以及浏览器和服务端执行流程；口喷
+1. 如何完成登陆模块，包括但不限于：登陆表单如何实现；cookie登录态维护方案；token base登录态方案；session概念；
+
+# ts
+
+# 移动端
+
+1. [移动端适配方案具体实现以及对比]()
+
+# node
+
+1. pm2
+
+# webpack
+
+1. webpack、rollup、gulp、vite的区别，以及它们的适用场景
+1. webpack5新特性
+1. webpack基础配置
+1. webpack打包结果的代码结构和
+1. webpack的执行流程
+1. index.js，runtime.js是干嘛的
+1. webpack打包链路
+1. plugin生命周期
+1. 怎么写一个plugin和loader
+1. 常见loader做了什么事情，能几句话说明白，比如babel-loader，vue-loader
+1. 能结合性能优化聊webpack配置怎么做，能清楚说明白核心要点有哪些，并说明解决什么问题，需要哪些外部依赖，比如cdn，接入层等
+1. 了解异步模块加载的实现原理，核心逻辑
+
+# babel
+
+1. 这个babel插件的适用场景有哪些
+1. 开发这个babel插件遇到了哪些问题，怎么解决的
+1. 为什么会想到用babel方案去开发这个插件，调研流程是怎么样的
+1. 这个插件还有哪些可以优化的地方，怎么优化
+1. babel的preset和pollyfill可以互相替代吗，为什么可以/不可以
+1. babel7相较于之前做了哪些优化
+
+# 网络
+
+1. websocket用法，包括但不限于：鉴权，房间分配，心跳机制，重连方案等。
+1. http
+1. https
+1. udp/tcp
+1. http2
+1. http3
+1. cdn
+1. dns
+1. websocket、socket
+
+# 浏览器
 
-```
-进阶顺序
-
-1、网络
-2、vue
-3、浏览器
-4、webpack
-5、node
-6、js
-
-
-web安全
-css
-html
-性能优化
-数据结构和算法
-设计模式
-跨端
-项目
-工具
-管理
-```
-
-## 一、JavaScript
-
-
-* 介绍下Set、Map、WeakSet 和 WeakMap 的区别？
-
-
-* 什么是防抖和节流？有什么区别？如何实现？
-* reduce的使用
-* 模块化：说说commonjs和esmodule？
-* 常见原生api的使用
-* 基本数据类型和引用类型
-* es6中的set（集合）和map（字典）的使用和对应的数据结构
-* sort的实现，内部用的插入排序和快速排序（根据排序的量级用不同的方法）
-* 说一下原型链，原型链实现继承
-* 说下 js的内存泄漏，什么情况容易出现内存泄漏？怎么解决？垃圾回收机制是怎么样的？
-* JS运行机制
-* [闭包、js垃圾回收机制](https://github.com/liyayun713/Interview/blob/master/js/closure.md)
-* 原型、构造函数、实例、原型链
-* 如何实现继承、继承的几种方法
-* 创建对象有几种方法
-* 面向对象 vs 函数式编程
-* 常用js设计模式
-* 类型转换
-* new运算符
-* instanceof、typeof原理
-* setTimeout、setInterval原理
-* 数组去重、排序、乱序
-* 深浅拷贝
-* 作用域、this、call、apply、bind
-* 函数柯里化
-* JS浮点数精度问题
-* 常用数组、字符串操作方法
-* 函数节流、防抖
-* 手写一些常用的函数（debounce、assign、new、Object.create、promise、bind等）
-* js发展史简述
-
-
-### typescript
-
-
-* 为什么要使用 TypeScript ? TypeScript 相对于 JavaScript 的优势是什么？
-
-
-* TypeScript 中 const 和 readonly 的区别？枚举和常量枚举的区别？接口和类型别名的区别？
-
-
-* TypeScript 中 any 类型的作用是什么？
-
-
-* TypeScript 中 any、never、unknown 和 void 有什么区别？
-
-
-* TypeScript 中 interface 可以给 Function / Array / Class（Indexable）做声明吗？
-
-
-* TypeScript 中可以使用 String、Number、Boolean、Symbol、Object 等给类型做声明吗？
-
-
-* TypeScript 中的 this 和 JavaScript 中的 this 有什么差异？
-
-
-* TypeScript 中使用 Unions 时有哪些注意事项？
-
-
-* TypeScript 如何设计 Class 的声明？
-
-
-* TypeScript 中 ?.、??、!.、_、** 等符号的含义？
-
-
-* TypeScript 中如何联合枚举类型的 Key?
-
-
-* TypeScript 中预定义的有条件类型有哪些？
-
-
-* 简单介绍一下 TypeScript 模块的加载机制？
-
-
-* 简单聊聊你对 TypeScript 类型兼容性的理解？抗变、双变、协变和逆变的简单理解？
-
-
-* TypeScript 中对象展开会有什么副作用吗？
-
-
-* TypeScript 中 interface、type、enum 声明有作用域的功能吗？
-
-
-* TypeScript 中同名的 interface 或者同名的 interface 和 class 可以合并吗？
-
-
-* 如何使 TypeScript 项目引入并识别编译为 JavaScript 的 npm 库包？
-
-
-* TypeScript 的 tsconfig.json 中有哪些配置项信息？
-
-
-* TypeScript 中如何设置模块导入的路径别名？
-
-
-### 异步
-
-* Promise 构造函数是同步执行还是异步执行，那么 then 方法呢？
-
-
-* JavaScript异步的处理方式(回调、promise、generator、async)
-
-
-* 手写promise的all方法
-
-
-* 手写实现promise
-
-### DOM
-
-* 事件模型、事件流
-
-
-* event
-
-
-* 事件冒泡、事件捕获
-
-
-* 事件委托的原理
-
-
-* DOM事件的target和currentTarget的区别
-
-
-### ES6
-
-* 常用 es6 语法
-
-
-* 使用es5实现es6的class
-
-
-* ES6 中 Symbol、Map、Decorator 的使用场景有哪些？或者你在哪些库的源码里见过这些 API 的使用？
-* let、const 和 var 区别
-* class
-* 拓展运算符
-* 解构赋值
-* 异步、promise、async、wait等。。。
-* 箭头函数
-* 字符串模板
-* 模块化（import、export）
-* ES6 中的 extends 和 ES5 中的 prototype 实现原理上区别
-* 你们的前端项目主要用的是ES版本是多少？说出ES7中的3个性特性并说出应用场景？说出ES8中的三个新特性并说出应用场景？
-
-### ES7/ES8...新特性
-
-* 函数防抖、函数节流
-* 事件循环（浏览器、Node）
-* JavaScript的sort方法内部使用的什么排序？
-* 函数式编程
-* 手动实现parseInt
-* 用JavaScript的异步实现sleep函数
-* 原型、闭包
-
-### Jquery
-
-* on 和 bind 区别，on采用事件委托，新加子元素可以，bind不行
-
-### 手写题
-
-* 手写实现jsonp
-* 手写bind
-* 手写promise，基础架子，不用写all、race等api
-* 手写节流、防抖
-
-### [简答题系列](https://github.com/liyayun713/Interview/blob/master/js/js.md)   
-
-<details>
-<summary>详情</summary>
-
-* JS有几种数据类型，其中基本数据类型有哪些？
-* null和undefined的差异
-* JS 的DOM 操作(Node节点获取及增删查改)
-* 对数组 ['2018-03-05', '2013-06-12','2019-03-12','2018-03-05','2014-02-22'] 去重且排序
-* 对数组[1,2,3,4,5,'6',7,'8','a','b','z']进行乱序
-* JS 实现String.trim()方法
-* navigator.userAgent
-
-</details>
-
-<hr />
-
-## 二、框架
-
-
-### 相关专题
-
-
-Vue 2.x 模板中的指令是如何解析实现的？
-
-
-简要说明 Vue 2.x 的全链路运作机制？
-
-
-简单介绍一下 Element UI 的框架设计？
-
-
-如何理解 Vue 是一个渐进式框架？
-
-
-Vue 里实现跨组件通信的方式有哪些？
-
-
-Vue 中响应式数据是如何做到对某个对象的深层次属性的监听的？
-
-
-* MVVM、MVC 和 MVP 的区别是什么？各自有什么应用场景？、
-
-
-* 什么是 MVVM 框架？
-
-
-* Vue 和 React的区别是什么？你觉得哪个好？
-* 生命周期
-* 组件通信
-* 双向数据绑定原理
-* vue-router
-* vuex
-* diff算法
-* 虚拟DOM
-* MVVM、MVC
-
-### 题目
-
-* [1、vue双向数据绑定原理](https://github.com/miracle90/Interview/blob/master/vue/1.bind-principle.md)
-
-
-* [2、vue-router原理](https://github.com/miracle90/Interview/blob/master/vue/2.router-principle.md)
-* [3、计算属性和普通属性的区别是什么？](https://github.com/miracle90/Interview/blob/master/vue/3.data-computed.md)
-* [4、Vuex和localStorage的区别是什么？](https://github.com/miracle90/Interview/blob/master/vue/4.vuex-localstorage.md)
-* [5、说一下Vue的keep-alive是如何实现的，具体缓存的是什么？](https://github.com/miracle90/Interview/blob/master/vue/5.keep-alive.md)
-* [6、对虚拟DOM的理解？虚拟DOM主要做了什么？虚拟DOM本身是什么？](https://github.com/miracle90/Interview/blob/master/vue/6.virtual-dom.md)
-* 写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？
-* 为什么组件中的 data 必须是一个函数，然后 return 一个对象，而 new Vue 实例里，data 可以直接是一个对象？
-* Vue 组件间通信有哪几种方式？
-* 直接给一个数组项赋值，Vue 能检测到变化吗？
-* 页面刷新后的vuex的state数据丢失怎么办?
-* 在哪个生命周期内调用异步请求？
-* 使用过 Vue SSR 吗？说说 SSR？
-* 说一下Vue 的父组件和子组件生命周期钩子函数执行顺序？
-* Vue 中的 key 有什么作用?
-* 说一下单向数流有什么好处？
-* 怎么理解 vue 的单向数据流?
-* 能说下 vue-router 中常用的 hash 和 history 路由模式实现原理吗？
-* 子组件可以直接改变父组件的数据么？说说你的理由？(vue部分)
-* 怎样理解 Vue 的单向数据流？
-* v-model是如何实现的，语法糖实际是什么？
-* 说一下Vue单页与多页的区别?
-* 说一下Vue的$nextTick原理
-* 说一下Vue template到render的过程
-* 说一下Vue的生命周期以及每个阶段做的事情
-* 你所理解的前端路由是什么?
-* 介绍下 vue-router 中的导航钩子函数
-* Vue是如何收集依赖的?
-* 说说Vue开发如何针对搜索引擎做SEO优化?
-* Vue-cli默认是单页面的，如果要开发多页面应该怎么办?
-* Vue-router history 模式部署的时候要注意什么?server 端用 nginx 和 node 时候分别怎么处理?
-* 为什么要用 vuex 或者 Redux?
-* 说一下 vuex 的原理以及自己的理解
-* vue 如何做权限校验?
-* Vuex 怎么知道 state 是通过 mutation 修改还是外部直接修改的?
-* Vue 调用 push 给数组添加元素会自动更新么?原因是什么?
-* Vuex 的 action 和 mutation 的特性是什么?有什么区别?
-* 说一下路由钩子在 vue 生命周期的体现?
-* vue响应式原理，什么是mvvm
-* vue原理，包括计算属性、依赖收集等等
-* 虚拟DOM
-* 双向数据绑定
-* vue-lazyloader的原理，手写伪代码
-* vue的响应式原理、依赖收集、监听数组、虚拟dom等等
-* 手写vue双向绑定
-* vue-router的原理
-* 手写vue的mixin方法
-* vue里面哪儿不会用到双向绑定
-* 对vuex的理解，单向数据流
-* 从渲染watcher到虚拟dom
-
-* 源码分析
-* MVVM、MVC、MVP
-* MVVM是什么
-* 生命周期
-* vuex的作用及原理
-* vue-router的实现
-* 双向数据绑定原理、vue-router原理、nextTick原理
-* 父子组件通讯
-* 源码考察（双向数据绑定，虚拟DOM）
-* [this.$set()原理](https://blog.csdn.net/XuM222222/article/details/99942522)
-* 对MVC （react） MVVM（vue）的了解
-* vue中nextTick的实现，结合浏览器事件循环机制说一下？
-* 怎么看待virtual dom？
-* ast语法树了解吗？
-* vue-loader做了哪些事情？
-* vue diff？
-* vue computed和watch区别？
-* computed怎么实现的缓存（dirty）？
-* vue3双向数据绑定实现？
-* createRender？和vue2有哪些不同
-* 说下对函数式编程对的理解
-
-### [简答题系列](https://github.com/liyayun713/Interview/blob/master/vue/vue.md)
-
-### vue3
-
-* 说一下对vue3.0的了解，vue3.0为什么要用代理?
-
-
-* 说一下 Vue3 的 Composition API
-* Vue3 为什么改为用 Proxy 监听数据，你能说出个条条框框？
-
-### React
-
-* How Virtual-DOM and diffing works in React
-
-
-* react hooks 有哪些优缺点？
-* useLayoutEffect 和 useEffect 区别是什么？
-* redux主要解决了什么问题？它的工作原理是什么？与mobx的区别是什么？你觉得redux 和 mobx哪个更好？
-* react中state有层级很深，比如a.b.c.d，如果只更新c属性有哪些办法？immutable.js实现的原理是什么？
-* react中的diff算法的原理？传统的diff算法是怎么实现的？
-* 说出一个react的特性？它的原理是什么？（我答的fiber）
-
-
-<hr />
-
-## 三、网络
-
-### [1、tcp/udp](./network/tcp_udp.md)
-
-CDN 服务如何实现网络加速？
-
-
-WebSocket 使用的是 TCP 还是 UDP 协议？
-
-
-什么是单工、半双工和全双工通信？
-
-
-简单描述 HTTP 协议发送一个带域名的 URL 请求的协议传输过程？（DNS、TCP、IP、链路）
-
-
-什么是正向代理？什么是反向代理？
-
-
-Cookie 可以在服务端生成吗？Cookie 在服务端生成后的工作流程是什么样的？
-
-
-Session、Cookie 的区别和关联？如何进行临时性和永久性的 Session 存储？
-
-
-设置 Cookie 时候如何防止 XSS 攻击？
-
-
-简单描述一下用户免登陆的实现过程？可能会出现哪些安全性问题？一般如何对用户登录的密码进行加密？
-
-
-HTTP 中提升传输速率的方式有哪些？常用的内容编码方式有哪些？
-
-
-传输图片的过程中如果突然中断，如何在恢复后从之前的中断中恢复传输？
-
-
-什么是代理？什么是网关？代理和网关的作用是什么？
-
-
-HTTPS 相比 HTTP 为什么更加安全可靠？
-
-
-什么是对称密钥（共享密钥）加密？什么是非对称密钥（公开密钥）加密？哪个更加安全？
-
-
-你觉得 HTTP 协议目前存在哪些缺点？
-
-
-* 三次握手四次挥手
-
-### 专题
-
-* 七层网络协议、tcp/ip协议
-
-
-* http/https
-* http2/http3
-* cdn
-* dns
-* websocket
-* ip
-* 简单请求？跨域？
-* http状态码
-
-### websocket
-
-* websocket的使用场景（socket.io降级）？
-
-
-* websocket握手过程
-
-### [简答题系列]()
-
-* HTTP2.0/HTTP3.0（队头阻塞？解决了哪些问题？哪有哪些问题未解决？）
-
-
-* 为什么说https是安全的？https的证书校验过程是怎么样的？（这里一定要说的非常非常详细）证书校验用到了哪些算法？
-* https一定是安全的吗？（考察https中间人劫持），有什么解决办法？
-* 说出http2中至少三个新特性？你们有在实际中用过吗？
-* 多问了http缓存机制问题，然后问了一下: 浏览器的默认缓存时间是多久？
-* HTTP请求特征是什么？
-* CDN有哪些优化静态资源加载速度的机制？
-* 与HTTP相关的协议有哪些？TCP/IP DNS URI/URL HTTPS
-* 说一下你理解的 HTTPS 中间人攻击 ?
-* CDN 访问过程是什么？
-* 说一下ajax/axios/fetch三者的区别
-* SSL 连接断开后如何恢复 ?
-* 什么是 CDN 服务?
-* cdn分布式部署，如果处理用户请求最近的资源？
-* DNS 解析的具体过程
-* get请求传参长度存在限制，是http协议限制的么?
-* 说一下get、post、put的区别
-* 请求在客户端报413是什么错误,怎么解决呢?
-* WebSocket 如何断开重连?
-* 请解释下 http 中所有请求方法
-* 说一下网络通信中引入滑动窗口的作用
-* 说一下 http2 的特性，http2 怎么确保文件同时传输不会报错?
-* tcp/ip网络层、三次握手，为什么不能两次握手
-* tcp/ip网络层，http的特点
-* http强行使用udp能实现吗？
-* 写出 tcp 和 udp 协议的区别，并简单描述 tcp 连接建立和断开的过程
-* POST、GET
-* 谈谈你对 TCP 的理解
-
-<hr />
-
-## 四、webpack
-
-### 专题
-
-* 常用配置
-
-### 题目
-
-* 怎么配webpack
-
-* Webpack 中的插件机制是如何设计的？
-
-* 项目中怎么用的webpack，怎么优化
-* webpack热更新原理，使用过的插件
-* 如何让webpack打包的速度提升50%？
-* 用过哪些loader？plugin？
-* 自己的插件实现了什么？怎么实现的？
-* sourcemap原理？
-
-<hr />
-
-## 五、浏览器
-
-* 什么是沙箱？浏览器的沙箱有什么作用？
-
-* 缓存相关（对比缓存？强缓存？对应请求头）cookie有哪些属性？
-* 说一下从url输入到返回请求的过程
-* 跨域
-* 浏览器渲染过程
-* 回流重绘
-* load、DOMContentLoaded等等事件的触发顺序
-* 浏览器发展史
-* 从输入url到页面加载的过程
-* 浏览器缓存（强制缓存、协商缓存）
-* 浏览器渲染机制
-* 重排、重绘
-* 说下浏览器的进程、线程模型，chrome浏览器有多少个进程？线程模型中的每个线程都是干嘛用的？
-* 说一下输入一个url地址后的全过程？dom渲染那块描述过于简单，能否说的更详细点？
-
-### Service Worker、Web Worker
-
-* 假设有一个非常复杂耗时的逻辑，代码逻辑已经最优了前提下要你优化，你有哪些办法？（这题其实是考察WebWorker）
-* WebWorker有了解过吗？它有什么应用场景？ 刚刚的算法题可以用这个进行再次优化吗？
-
-<hr />
-
-## 六、Node
-
-* Session、Cookie 的区别和关联？如何进行临时性和永久性的 Session 存储？
-
-
-* 如何部署 Node.js 应用？如何处理负载均衡中 Session 的一致性问题？
-
-
-* 如何提升 Node.js 代码的运行稳定性？
-
-
-* GraphQL 与 Restful 的区别，它有什么优点？
-
-
-* Vue SSR 的工作原理？Vuex 的数据如何同构渲染？
-
-
-* SSR 技术和 SPA 技术的各自的优缺点是什么？
-
-
-* 如何处理 Node.js 渲染 HTML 压力过大问题？
-
-* 项目里面用nodejs做了啥
-
-* express框架的设计思想
-* nodejs的eventEmitter的实现
-* express的中间件系统是如何设计的
-* express 动态路由匹配
-* 实现一个事件发布订阅类，其实就是eventEmitter
-* 画图表达 nodejs 的时间循环的工作流程
-* node的事件循环机制？
-* stream两种模式的区别？
-* 看过koa源码都会觉得和express有很大不同，说一下？
-
-
-<hr />
-
-
-## 七、CSS
-
-* 绝对定位、浮动、表格布局
-
-
-* Flex布局
-* Grid布局
-* 标准盒模型 + IE盒模型
-* js获取盒模型的宽高（几种获取元素距离、长度的方法）
-* css实现一个三角线、扇形、正方体
-* 各种居中方案
-* 各种经典布局（双飞翼、圣杯）
-* css3的新选择器
-* css3新特性
-* 动画（animation、transform、transition）
-* 1px边框
-* css开启硬件加速来提升性能
-* SVG
-* 雪碧图
-* 图标字体
-* px、em、rem、viewport对比
-* less、sass、stylus区别
-* @import 和 link 的区别
-* BFC是什么？bfc布局规则
-* 项目怎么做的移动端适配？flexible原理（1px问题，通过viewport）
-* css选择器的优先级
-* css实现图片自适应宽高
-* flex，flex常用属性，以及相关作用
-
-### [简答题系列](https://github.com/liyayun713/Interview/blob/master/css/css.md)
-
-* 如何实现一个上中下三行布局，顶部和底部最小高度是 100px，中间自适应?
-
-
-* CSS 有哪些样式可以给子元素继承
-* 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些
-* box-sizing常用的属性有哪些? 分别有啥作用?
-* 清除浮动的方式有哪些？比较好的是哪一种？
-* 样式权重的优先级
-
-## 性能优化
-
-* 大列表的优化
-* 懒加载（不在可视区域的资源可以延迟加载，监听滚轮，采用节流来防止函数被高频触发）
-* 请问如何进行首页加载优化?
-* 资源压缩合并，减少http请求
-* 非核心代码异步加载（defer、async）
 * 浏览器缓存
-* 使用CDN
-* 预解析DNS
-* 懒加载、预加载
-* 自己的项目做了哪些性能优化？除了webpack打包之类的优化外，http层面有做了哪些优化？gzip如何开启？gzip有多少个级别？
 
-## 架构
+# web安全
 
-* 团队协作，以前的开发流程？
+1. 对称加密
+1. xss
+1. csrf
 
-# 数据结构和算法
+# vue
 
-* 排序
-* 堆栈、队列、链表
-* 递归
-* 快排、二分法查找
-* 爬楼梯[https://leetcode-cn.com/problems/climbing-stairs/](https://leetcode-cn.com/problems/climbing-stairs/)尾递归优化
-* 猴子吃香蕉[https://leetcode-cn.com/problems/koko-eating-bananas/](https://leetcode-cn.com/problems/koko-eating-bananas/)
-* 回文字符串个数[https://leetcode-cn.com/problems/palindromic-substrings/](https://leetcode-cn.com/problems/palindromic-substrings/)(最长回文字符串)
-* 反转单向链表怎么做？需要几个指针？都有什么作用？
-* 手写快排，时间复杂度，优化
-* 用二分法移除掉一个字符串中所有的字母字符。
+1. Vue 的双向绑定机制
 
-## 设计模式
+# react
 
-* 实现一个发布订阅系统，包括on、emit、off等等
+1. react常用生命周期
+1. react常见优化方案
+1. react大致实现思路，实现一个简化版的react
+1. 对比react和js控制原生dom的差异
+1. diff算法大致实现思路
+1. 对state和props有自己的使用心得，结合受控组件、hoc等特性描述，需要说明各种方案的适用场景。
+1. 能说明白为什么要实现fiber，以及可能带来的坑。
+1. 能说明白为什么要实现hook。
+1. 能说明白为什么要用immutable，以及用或者不用的考虑。
+1. 知道react不常用的特性，比如context，portal。
+1. 能用自己的理解说明白react like框架的本质，能说明白如何让这些框架共存。
 
-## 计算机基础
+# 性能优化
 
-* 操作系统发生死锁的原因及如何避免死锁
-* uncode utf 编解码的原理和不同
-* base64 二进制的不同
+1. 说一下项目性能优化过程中，是怎样充分利用 chrome 调试工具的?
+1. 请问如何进行首页加载优化?
+1. 如何加快页面渲染速度，都有哪些方式？
+1. 写出常用的页面优化实现方案？
 
-* \r\n（CRLF） 和 \n （LF）的区别是什么？(Vs Code 的右下角可以切换)
+# 跨端
 
+1. 移动端api请求与socket如何通过native发送，知道如何与native进行数据交互，知道ios与安卓jsbridge实现原理。
+1. 移动端webview和基础能力
+1. iOS端uiwebview与wkwebview差异
+1. webview资源加载优化方案
+1. webview池管理方案
+1. native路由
 
-* /dev/null 的作用是啥？
+# nginx
 
+1. [前端到底用nginx来做啥](#https://juejin.cn/post/7064378702779891749)
 
-* 如何在 Mac 的终端中设置一个命令的别名？
+# 前端监控
 
+# 脚手架
 
-* 如何在 Windows 中设置环境变量？
+# 团队、项目、架构、管理
 
+1. 曾经做过的最有挑战的两个项目
+1. 项目脚手架搭建，及如何以工具形态共享。
+1. 团队eslint规范如何设计，及如何统一更新。
+1. 工具化打包发布流程，包括本地调试、云构建、线上发布体系、一键部署能力。同时，方案不仅限于前端工程部分，包含相关服务端基础设施，比如cdn服务搭建，接入层缓存方案设计，域名管控等。
+1. 客户端缓存及预加载方案。
 
-* Mac 的文件操作系统默认区分文件路径的大小写吗？
+# 开放题目
 
+1. 你是怎么看待做后台管理系统的？很多人觉得它没有难点，你觉得呢？
+1. 未来的职业规划是什么样的？
+1. 对当前新的技术有了解吗？
+1. 对客户端知识有了解吗？
+1. 为什么要离职？
+1. 上家公司做了哪些事情以及做事的流程
+1. 未来职业规划
+1. 感兴趣的工作方向
 
-* 编写 Shell 脚本时如何设置文件的绝对路径？
-
-
-## 应用专题
-
-* 项目里面的前端鉴权是怎么实现的
-* 线上日志是如何处理的
-* 项目模块规划、项目如何部署、如何优化
-* 前端持久化的方式、区别
-* 怎么判断一个点是否在圆形内、正方形内
-* 设计一个单点登录的系统，类似阿里系那种
-
-## 前端监控
-
-* 要你设计一个前端监控方案，你打算怎么做。
-
-
-## 知识点整理
-
-### 腾讯、今日头条面试总结
-* js基础（原型、闭包、bind、函数节流等）
-* 异步（promise、async）
-* http协议（tcp、https、udp、加密过程等）
-* 设计模式（观察者模式）
-* Node、CDN
-
-### 面试重点知识总结
-
-* 登陆问题（cookie、session、token）
-* https
-* webpack相关（原理、优化、loader）
-* ES6（rest语法，promise）
-* 性能优化
-* CDN
-* 动画
-* 居中问题
-* 移动端兼容性的坑（主要是ios）
-* 原码、反码、补码
-
-### 实际开发中遇到的一些问题
-
-* webpack配置问题
-* ios 上的兼容问题
-* 业务逻辑复杂问题
-
-### 项目相关
-
-* 对于企业内部中台系统的架构方案，也没有问一些具体的技术细节
-
-1. 红包活动（活动描述、算法）
-2. 地图组件（高德地图）
-3. sass、less迁移到stylus（迁移原因）
-4. 模块划分（业务模块、功能模块）
-5. 移动端适配（flexible.js）
-6. vuelidate、fastclick、mint-ui、vue-lazyload、mock.js、base64位图、wxShare（weixin-js-sdk）
-7. 组件异步加载
-8. 公共方法 util.js（深浅克隆、浮点运算、设备类型判断、url取参数、web存储）
-9. 接口单独抽出来
-10. 埋点
-
-### 综合
-
-* 进程与线程的区别
-* 错误监控
-* web存储（session、cookie、sessionStorage、localStorage等）
-* 模块化（commonjs、requirejs、seajs、ES6的模块化、AMD、CMD等）
-* 前端注册登录流程
-* Git
-
-
-
-## web安全
-
-* XSS
-* CSRF
-* 摘要算法和对称加密、非对称加密
-* 摘要和加密的区别？
-* 常见哪些加密算法？
-* 前端安全防范措施？xss攻击和csrf攻击？
-* dns劫持？
-* 说下crsf 和 xss，分别举例说明，各有什么解决办法？
-* Cookie的同源策略是怎么样的，跨域情况下如何携带 cookie（这里主要考察了SameSite问题，因为我crsf问题没答到这点）
-
-## HTML
-
-### 专题系列
-
-* html语义化
-* HTML5新特性
-* HTML5新标签
-* SEO
-* doctype
-* 各种meta标签
-
-### [简答题系列](https://github.com/liyayun713/Interview/blob/master/html/html.md)
-
-## Babel
-
-## 跨平台
-
-* react-native/weex与flutter区别
-* js如何与webview交互
-* 有接触过哪些移动端跨平台框架？说下jsBridge？
-* 说下react-native的原理，原生端和js端是怎么通信的？
-* flutter有了解过吗？为什么说它的性能可以媲美原生？它有什么缺点吗？
-* 如果一个项目要用移动端跨平台框架开发，你会选择哪个？
-
-### Flutter
-
-### React Native
-
-### Electron
-
-### 小程序
-
-* 生命周期
-* 架构原理
-* 微信授权流程
-* 最新api
-* 初始化获取用户信息流程
-* 你写过小程序，说下和写vue有什么区别？
-* 然后我说setData会有性能问题（react中setState会有这个问题吗？又给自己挖坑了） 说下jsbrige？
-
-## Nginx
-
-## three.js
-
-## pwa
-
-## 微前端
-
-## 低代码
-
-如何设计一个通用的 JSON Schema 协议使其可以动态渲染一个通用的联动表单？
-
-一般的低代码平台需要具备哪些能力？
-
-## 前端工程化
-
-你所知道的 CI / CD 工具有哪些？在项目中有接触过类似的流程吗？
-
-
-如果让你实现一个 Web 前端的 CI / CD 工程研发平台，你会如何设计？
-
-
-如果我们需要将已有项目中的线上产物资源（例如图片）转换成本地私有化资源，你有什么解决方案？
-
-
-如何使用 Vue CLI 3.x 定制一个脚手架？比如内部自动集成了 i18n、 axios、Element UI、路由守卫等？
-
-
-Jenkins 如何配合 Node.js 脚本进行 CI / CD 设计？
-
-如果让你设计一个通用的项目脚手架，你会如何设计？一个通用的脚手架一般需要具备哪些能力？
-
-
-如果让你设计一个通用的工具库，你会如何设计？一个通用的工具库一般需要具备哪些能力？
-
-
-假设你自己实现的 React 或 Vue 的组件库要设计演示文档，你会如何设计？设计的文档需要实现哪些功能？
-
-
-在设计工具库包的时候你是如何设计 API 文档的？
-
-## 业务
-
-什么是单点登录？如何做单点登录？
-
-
-如何做一个项目的国际化方案？
-
-
-如何做一个项目的监控和埋点方案？
-
-
-如何建设项目的稳定性（监控、灰度、错误降级、回滚...）？
-
-
-一般管理后台型的应用需要考虑哪些性能方面的优化？
-
-
-简述一些提升项目体验的案例和技术方案（骨架屏、Loading 处理、缓存、错误降级、请求重试...）？
-
-
-假设需要对页面设计一个水印方案，你会如何设计？
-
-
-
-
-
-
-## 工具链
-
-* 浏览器（performance、memory）
-* tinyPNG
-* can i use
-* postman
-* 抓包 => Charles
-* 内存测试 => PerfDog
-* Wireshark => 网络封包分析软件
-* 耗电测试
-
-## 项目
-
-* 工作中遇到过的最难的问题是什么？最后解决了吗？怎么解决的？现在觉得有没有更好的解决方案？
-* 对于你来说，你觉得做音乐app中最大的技术难点是什么？
-* 在技术上，你对自己以后有什么规划？
