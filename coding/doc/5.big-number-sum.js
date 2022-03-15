@@ -39,3 +39,5 @@ function bigSum(a, b) {
 }
 
 console.log(bigSum(a, b));
+
+console.log(BigInt(a) + BigInt(b))

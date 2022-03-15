@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <div id="content"></div>
+    <script>
+      /**
+       * 防抖
+       * @param {*} func
+       * @param {*} wait 延迟的时间
+       * @param {*} immediate 是否立即执行一次
+       * @returns
+       */
+      function debounce(func, wait, immediate) {
+        let timer;
+        // args取参数
+        return function (...args) {
+          // 作用域
+          const context = this;
+          clearTimeout(timer);
+          // 立即执行
+          if (immediate && !timer) {
+            func.apply(context, args);
+          }
+          timer = setTimeout(() => {
+            func.apply(context, args);
+          }, wait);
+        };
+      }
+      /**
+       * 定时器实现节流
+       */
+      function throttle1(func, wait) {
+        let timer;
+        return function (...args) {
+          const context = this;
+          if (!timer) {
+            timer = setTimeout(() => {
+              func.apply(context, args);
+              timer = null;
+            }, wait);
+          }
+        };
+      }
+      /**
+       * 根据时间date实现节流
+       */
+      function throttle2(func, wait) {
+        let current = 0;
+        return function (...args) {
+          const context = this;
+          if (Date.now() - current > wait) {
+            current = Date.now();
+            func.apply(context, args);
+          }
+        };
+      }
+      // 输入框防抖
+      input.addEventListener(
+        "input",
+        debounce(() => {
+          // 模拟发送请求
+          console.log("发送请求", input.value);
+        }, 300)
+      );
+      // 滚动条防抖
+      // window.addEventListener(
+      //   "scroll",
+      //   debounce(
+      //     () => {
+      //       console.log(new Date());
+      //     },
+      //     300,
+      //     true
+      //   )
+      // );
+      // 滚动条节流
+      // window.addEventListener(
+      //   "scroll",
+      //   throttle1(() => {
+      //     console.log(new Date());
+      //   }, 800)
+      // );
+      window.addEventListener(
+        "scroll",
+        throttle2(() => {
+          console.log(new Date());
+        }, 800)
+      );
+      // 插入列表
+      let list = "";
+      for (let i = 0; i < 50; i++) {
+        list += `<p>元素${i}</p>`;
+      }
+      content.innerHTML = list;
+    </script>
+  </body>
+</html>
