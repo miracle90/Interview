@@ -1,5 +1,3 @@
-const { call } = require("function-bind");
-
 // 定义三个常量表示状态
 const PENDING = "pending";
 const FULFILLED = "fulfilled";
