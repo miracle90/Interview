@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let socket;
+      let url = "ws://localhost:9000";
+      class HeartCheck {
+        time = 6000;
+        checkTimer = null;
+        checkServer = null;
+        connecting = false;
+        startCheck = () => {
+          // onopen onmessage调用开始心跳检测状态
+          // time 秒后，发送心跳检测请求
+          this.checkTimer = setTimeout(() => {
+            socket.send("发送心跳检测");
+            this.checkServer = setTimeout(() => {
+              // 如果没有建立连接，导致没有reset，会close当前连接，然后重连
+              socket.onclose("心跳检测失败，先断开连接");
+            }, this.time);
+          }, this.time);
+        };
+        // 清空两个定时器
+        resetCheck = () => {
+          clearTimeout(this.checkTimer);
+          clearTimeout(this.checkServer);
+          return this; // return this实现链式调用
+        };
+        reconnect() {
+          if (this.connecting) return;
+          this.connecting = true;
+          console.log("断线重连中~~~~~~~");
+          setTimeout(() => {
+            this.connecting = false;
+            wsConnect(url);
+          }, this.time);
+        }
+      }
+      function wsConnect(url) {
+        const heartCheck = new HeartCheck();
+        socket = new WebSocket(url);
+        socket.onclose = () => {
+          console.log("连接断开");
+          heartCheck.reconnect();
+        };
+        socket.onerror = (err) => {
+          console.log("连接出错");
+          heartCheck.reconnect();
+        };
+        socket.onopen = () => {
+          console.log("建立连接");
+          heartCheck.resetCheck().startCheck();
+        };
+        socket.onmessage = (message) => {
+          console.log("收到信息", message.data);
+          heartCheck.resetCheck().startCheck();
+          // todo...
+        };
+      }
+      wsConnect(url);
+    </script>
+  </body>
+</html>
