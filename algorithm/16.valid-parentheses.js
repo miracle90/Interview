@@ -42,6 +42,8 @@ var isValid = function (s) {
     if (k === "{" || k === "[" || k === "(") {
       stack.push(obj[k]);
     } else {
+      // 如果是右括号
+      // 如果栈为空，或者不等于栈顶元素，return false
       if (!stack.length || stack.pop() !== k) {
         return false;
       }
