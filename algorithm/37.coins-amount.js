@@ -28,27 +28,15 @@
  * @return {number}
  */
 var coinChange = function (coins, amount) {
-  // const f = [];
-  // // 提前定义已知情况
-  // f[0] = 0;
-  // for (let i = 1; i <= amount; i++) {
-  //   // 求的是最小值，因此我们预设为无穷大，确保它一定会被更小的数更新
-  //   f[i] = Infinity;
-  //   for (let j = 0; j < coins.length; j++) {
-  //     // 总金额大于当前硬币金额
-  //     if (i >= coins[j]) {
-  //       // 状态转移方程
-  //       f[i] = Math.min(f[i], f[i - coins[j]] + 1);
-  //     }
-  //   }
-  // }
-  // return f[amount] === Infinity ? -1 : f[amount];
   let f = [];
   f[0] = 0;
   for (let i = 1; i <= amount; i++) {
+    // 求的是最小值，因此我们预设为无穷大，确保它一定会被更小的数更新
     f[i] = Infinity;
     for (let j = 0; j < coins.length; j++) {
+      // 总金额大于当前硬币金额才有意义
       if (i >= coins[j]) {
+        // f[i - coins[j]] + 1，退一个硬币的情况下，各个硬币循环取最小值
         f[i] = Math.min(f[i], f[i - coins[j]] + 1);
       }
     }
@@ -56,4 +44,7 @@ var coinChange = function (coins, amount) {
   return f[amount] === Infinity ? -1 : f[amount];
 };
 
+console.log(coinChange([1, 2, 5], 11));
 console.log(coinChange([1, 2, 5], 21));
+console.log(coinChange([5], 3));
+console.log(coinChange([1], 1));
