@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const xhr = new XMLHttpRequest();
+      const method = "post";
+      const url = "http://localhost:3000";
+      const data = JSON.stringify({
+        a: "a",
+        b: "b",
+      });
+      // 进度条
+      xhr.upload.onprogress = (e) => {
+        console.log(e.loaded, e.total);
+      };
+      //将超时设置为3秒钟
+      xhr.timeout = 3000;
+      // 请求超时后请求自动终止，会调用 ontimeout 事件处理程序
+      xhr.ontimeout = function () {
+        console.log("请求超时了");
+      };
+      xhr.open(method, url);
+      // readyState属性表示请求/响应过程的当前活动阶段。这个属性的值如下：
+      // 0（UNSENT）未初始化。尚未调用open()方法。
+      // 1（OPENED）启动。已经调用open()方法，但没有调用send()方法。
+      // 2（HEADERS_RECEIVED）发送。已经调用send()方法，但尚未接收到响应。
+      // 3（LOADING）接收。已经接收到部分响应数据。
+      // 4（DONE）完成。已经接收到全部响应数据。
+      xhr.onreadystatechange = function (e) {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          //
+        }
+      };
+      // 可以使用onload事件可以用来替代readystatechange事件。
+      // 因为响应接收完毕后将触发onload事件
+      // 因此也就没有必要去检查readyState属性了。
+      // 只要浏览器接收到服务器的响应，不管其状态如何，都会触发load事件。
+      xhr.onload = (e) => {
+        const { readyState, status, response } = e.target;
+        if (readyState === 4 && status === 200) {
+          document.body.innerHTML = response;
+        }
+      };
+      xhr.send(data);
+    </script>
+  </body>
+</html>
