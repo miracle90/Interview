@@ -9,7 +9,7 @@
  * @param {*} Con
  * @param  {...any} args
  */
- function create(Con, ...args) {
+function create(Con, ...args) {
   // 然后内部创建一个空对象 obj
   let obj = {};
   // 这段代码等同于 obj.__proto__ = Con.prototype

@@ -27,7 +27,9 @@ Function.prototype.myApply = function (context, argsList) {
   return result;
 };
 Function.prototype.myBind = function (context, ...args) {
-  if (typeof this !== "function") throw new TypeError("Error");
+  if (typeof this !== "function") {
+    throw new TypeError("Error");
+  }
   context = context || window;
   const fnSymbol = Symbol("fn");
   context[fnSymbol] = this;
@@ -38,10 +40,13 @@ Function.prototype.myBind = function (context, ...args) {
     return result;
   };
 };
+
 let p1 = {
   name: "Tom",
-  say(age, hobby) {
-    console.log(`我叫${this.name} 我今年${age} 喜欢${hobby}`);
+  say(age, hobby, hobby1, hobby2) {
+    console.log(
+      `我叫${this.name} 我今年${age} 喜欢${hobby}、${hobby1}、${hobby2} `
+    );
   },
 };
 let p2 = {
@@ -49,4 +54,4 @@ let p2 = {
 };
 // p1.say.myApply(p2, [18, "唱歌"]);
 const f = p1.say.myBind(p2, "32", "搞钱");
-f();
+f("happy", "打球");

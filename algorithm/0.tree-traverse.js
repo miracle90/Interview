@@ -2,7 +2,6 @@ function tree(val) {
   this.left = this.right = null;
   this.val = val;
 }
-
 const root = {
   val: "A",
   left: {
@@ -21,7 +20,6 @@ const root = {
     },
   },
 };
-
 function pre(root) {
   if (!root) return null;
   console.log(root.val);
