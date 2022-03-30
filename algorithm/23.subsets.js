@@ -23,7 +23,6 @@ var subsets = function (nums) {
   function dfs(index) {
     // 每次进入，都意味着组合内容更新了一次，故直接推入结果数组
     res.push(subset.slice());
-    console.log(res);
     // 从当前数字的索引开始，遍历 nums
     for (let i = index; i < len; i++) {
       // 这是当前数字存在于组合中的情况

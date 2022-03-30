@@ -45,9 +45,6 @@ var combine = function (n, k) {
   // 返回结果数组
   return res;
 };
-
-
-
 // function xxx(入参) {
 //   前期的变量定义、缓存等准备工作 
   

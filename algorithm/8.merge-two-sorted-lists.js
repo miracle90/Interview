@@ -8,51 +8,50 @@
 // 示例 3：
 // 输入：l1 = [], l2 = [0]
 // 输出：[0]
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @return {ListNode}
- */
-var mergeTwoLists = function (l1, l2) {
-  const head = new ListNode();
-  let cur = head;
-  while (l1 && l2) {
-    if (l1.val <= l2.val) {
-      cur.next = l1;
-      l1 = l1.next;
+var deleteDuplicates = function (head) {
+  var cur = head;
+  while (cur && cur.next) {
+    if (cur.val === cur.next.val) {
+      cur.next = cur.next.next;
     } else {
-      cur.next = l2;
-      l2 = l2.next;
+      cur = cur.next;
     }
-    cur = cur.next;
   }
-  //  如果while循环之后还有链表没有遍历完毕，拼接到后面
-  cur.next = l1 ? l1 : l2;
-  function ListNode(val, next) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-  return head.next;
+  return head;
 };
-const list1 = {
+let h1 = {
   val: 1,
   next: {
-    val: 2,
+    val: 1,
     next: {
-      val: 4,
+      val: 2,
+      next: null,
+    },
+  },
+};
+let h2 = {
+  val: 1,
+  next: {
+    val: 1,
+    next: {
+      val: 2,
       next: {
-        val: 5,
+        val: 3,
+        next: {
+          val: 3,
+          next: null,
+        },
       },
     },
   },
 };
-const list2 = {
+let h3 = {
   val: 1,
   next: {
-    val: 3,
-    next: {
-      val: 4,
-    },
+    val: 1,
+    next: null,
   },
 };
-console.log(JSON.stringify(mergeTwoLists(list1, list2)));
+console.log(deleteDuplicates(h1));
+console.log(deleteDuplicates(h2));
+console.log(deleteDuplicates(h3));

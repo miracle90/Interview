@@ -25,7 +25,7 @@ function myInterval(callback, delay, ...args) {
     realDelay = delay - offset;
     globalTimerId[timerId] = setTimeout(fn, Math.max(realDelay, 0));
   };
-  globalTimerId[timerId] = setTimeout(fn, delay);
+  globalTimerId[timerId] = setTimeout(fn, realDelay);
   // 记录timerId，方便清除定时器
   return timerId;
 }

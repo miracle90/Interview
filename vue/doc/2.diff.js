@@ -187,6 +187,7 @@ function updateChildren(parentElm, oldCh, newCh) {
       if (!oldKeyToIdx)
         oldKeyToIdx = createKeyToOldIdx(oldCh, oldStartIdx, oldEndIdx);
       idxInOld = newStartVnode.key ? oldKeyToIdx[newStartVnode.key] : null;
+      // 当前newStartVnode在old还未遍历完的项目中，是否存在
       if (!idxInOld) {
         createElm(newStartVnode, parentElm);
         newStartVnode = newCh[++newStartIdx];
@@ -215,4 +216,14 @@ function updateChildren(parentElm, oldCh, newCh) {
     // 将这些无用的老节点通过 removeVnodes 批量删除即可。
     removeVnodes(parentElm, oldCh, oldStartIdx, oldEndIdx);
   }
+}
+
+function createKeyToOldIdx(children, beginIdx, endIdx) {
+  let i, key;
+  const map = {};
+  for (i = beginIdx; i <= endIdx; ++i) {
+    key = children[i].key;
+    if (isDef(key)) map[key] = i;
+  }
+  return map;
 }

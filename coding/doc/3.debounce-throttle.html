@@ -18,7 +18,7 @@
        * @returns
        */
       function debounce(func, wait, immediate) {
-        let timer;
+        let timer = null;
         // args取参数
         return function (...args) {
           // 作用域
@@ -64,10 +64,14 @@
       // 输入框防抖
       input.addEventListener(
         "input",
-        debounce(() => {
-          // 模拟发送请求
-          console.log("发送请求", input.value);
-        }, 300)
+        debounce(
+          () => {
+            // 模拟发送请求
+            console.log("发送请求", input.value);
+          },
+          300,
+          true
+        )
       );
       // 滚动条防抖
       // window.addEventListener(

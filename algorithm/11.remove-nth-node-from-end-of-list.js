@@ -15,13 +15,13 @@
 
 /** 创建链表 */
 function arrayToListNode(arr) {
-  const listNode = new ListNode();
-  let cur = listNode;
+  const dummy = new ListNode();
+  let cur = dummy;
   while (arr.length) {
     cur.next = new ListNode(arr.shift());
     cur = cur.next;
   }
-  return listNode.next;
+  return dummy.next;
 }
 function ListNode(val, next) {
   this.val = val === undefined ? 0 : val;
@@ -33,7 +33,7 @@ const arr2 = [1];
 const l2 = arrayToListNode(arr2);
 const arr3 = [1, 2];
 const l3 = arrayToListNode(arr3);
-
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * @param {ListNode} head
  * @param {number} n

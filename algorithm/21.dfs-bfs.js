@@ -11,12 +11,12 @@ function DFS(root) {
   // 递归遍历右子树
   DFS(root.right);
 }
-
 function BFS(root) {
   const queue = [];
   queue.push(root);
   while (queue.length) {
     const top = queue[0];
+    console.log("当前遍历的结点值是：", top.val);
     // 操作top
     if (top.left) {
       queue.push(top.left);
@@ -27,3 +27,24 @@ function BFS(root) {
     queue.shift();
   }
 }
+const root = {
+  val: "A",
+  left: {
+    val: "B",
+    left: {
+      val: "D",
+    },
+    right: {
+      val: "E",
+    },
+  },
+  right: {
+    val: "C",
+    right: {
+      val: "F",
+    },
+  },
+};
+DFS(root);
+console.log("-------------------");
+BFS(root);

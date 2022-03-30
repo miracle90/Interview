@@ -24,7 +24,6 @@ const invertTree = function (root) {
   root.right = left;
   return root;
 };
-
 const r = {
   val: "A",
   left: {

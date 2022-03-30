@@ -15,50 +15,32 @@
  * @return {number[][]}
  */
 var merge = function (intervals) {
+  // 定义结果数组
   const res = [];
+  // 缓存区间个数
   const len = intervals.length;
-  if (!intervals || !len) {
+  // 将所有区间按照第一个元素大小排序
+  intervals.sort(function (a, b) {
+    return a[0] - b[0];
+  });
+  // 处理区间的边界情况
+  if (!intervals || !intervals.length) {
     return [];
   }
-  intervals.sort((a, b) => a[0] - b[0]);
+  // 将第一个区间（起始元素最小的区间）推入结果数组（初始化）
   res.push(intervals[0]);
+  // 按照顺序，逐个遍历所有区间
   for (let i = 1; i < len; i++) {
-    // 取出结果数组中的最后一个
-    const prev = res[res.length - 1];
+    // 取结果数组中的最后一个元素，作为当前对比的参考
+    prev = res[res.length - 1];
+    // 若满足交错关系（前一个的尾部 >= 下一个的头部）
     if (prev[1] >= intervals[i][0]) {
-      // prev[1] = intervals[i][1];
-      prev[1] = Math.max(intervals[i][1], prev[1])
+      prev[1] = Math.max(prev[1], intervals[i][1]);
     } else {
-      res.push(intervals[i])
+      res.push(intervals[i]);
     }
   }
-  return res
-  // 定义结果数组
-  // const res = [];
-  // // 缓存区间个数
-  // const len = intervals.length;
-  // // 将所有区间按照第一个元素大小排序
-  // intervals.sort(function (a, b) {
-  //   return a[0] - b[0];
-  // });
-  // // 处理区间的边界情况
-  // if (!intervals || !intervals.length) {
-  //   return [];
-  // }
-  // // 将第一个区间（起始元素最小的区间）推入结果数组（初始化）
-  // res.push(intervals[0]);
-  // // 按照顺序，逐个遍历所有区间
-  // for (let i = 1; i < len; i++) {
-  //   // 取结果数组中的最后一个元素，作为当前对比的参考
-  //   prev = res[res.length - 1];
-  //   // 若满足交错关系（前一个的尾部 >= 下一个的头部）
-  //   if (prev[1] >= intervals[i][0]) {
-  //     prev[1] = Math.max(prev[1], intervals[i][1]);
-  //   } else {
-  //     res.push(intervals[i]);
-  //   }
-  // }
-  // return res;
+  return res;
 };
 const intervals1 = [
   [1, 3],

@@ -30,6 +30,8 @@ var MinStack = function () {
  */
 MinStack.prototype.push = function (val) {
   this.stack.push(val);
+  // 如果stack2中没有值，或者stack2中栈顶的值大于当前值，push到stack2中
+  // 保证stack2是一个递减序列
   if (!this.stack2.length || this.stack2[this.stack2.length - 1] >= val) {
     this.stack2.push(val);
   }

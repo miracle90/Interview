@@ -28,7 +28,7 @@ class MyPromise {
         queueMicrotask(() => {
           try {
             const x = onFulfilled(this.value);
-            console.log('X', x)
+            console.log("X", x);
             resolvePromise(promise2, x, resolve, reject);
           } catch (error) {
             reject(error);

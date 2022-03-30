@@ -37,7 +37,7 @@ var maxSlidingWindow = function (nums, k) {
     }
     // 入队当前元素索引（注意是索引）
     queue.push(i);
-    // 当队头元素的索引已经被排除在滑动窗口之外时
+    // 窗口滑动，把左侧的老数据删掉
     while (queue.length && i >= k + queue[0]) {
       queue.shift();
     }

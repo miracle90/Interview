@@ -2,7 +2,7 @@ const arr = [2, 5, 6, 2, 5, 1, 7, 10, "a", "b", "a"];
 
 // 方法一：
 const newArr1 = [...new Set(arr)];
-console.log(newArr1);
+// console.log(newArr1);
 
 // 方法二：
 function filterRemoveDuplicates(arr) {
@@ -11,7 +11,7 @@ function filterRemoveDuplicates(arr) {
   });
 }
 const newArr2 = filterRemoveDuplicates(arr);
-console.log(newArr2);
+// console.log(newArr2);
 
 // 方法三：
 function reduceRemoveDuplicates(arr) {

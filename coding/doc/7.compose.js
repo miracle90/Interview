@@ -5,7 +5,7 @@
 
 const greeting = (name) => `hello ${name}`;
 const toUpper = (str) => str.toUpperCase();
-const addNumber = (str) => `${str} 666`;
+const addNumber = (str) => `${str}，老铁 666`;
 const fn = compose(addNumber, toUpper, greeting);
 console.log(fn("sunny"));
 
@@ -16,25 +16,40 @@ console.log(fn("sunny"));
 // compose函数可以接收任意的参数，所有的参数都是函数
 // 且执行方向是自右向左的，初始函数一定到参数的最右面
 
-// 递归实现
 function compose(...funcs) {
-  let len = funcs.length,
-    curIndex = len - 1,
+  const len = funcs.length;
+  let curIndex = len - 1,
     result;
-  // 首先compse 返回的是一个函数
   return function fn(...args) {
-    // 函数体里就是不断执行args函数，将上一个函数的执行结果作为下一个执行函数的输入参数，
     result = funcs[curIndex].apply(this, args);
-    // 递归边界
     if (curIndex > 0) {
       curIndex--;
-      // 递归
       return fn.call(null, result);
     } else {
       return result;
     }
   };
 }
+
+// 递归实现
+// function compose(...funcs) {
+//   let len = funcs.length,
+//     curIndex = len - 1,
+//     result;
+//   // 首先compse 返回的是一个函数
+//   return function fn(...args) {
+//     // 函数体里就是不断执行args函数，将上一个函数的执行结果作为下一个执行函数的输入参数，
+//     result = funcs[curIndex].apply(this, args);
+//     // 递归边界
+//     if (curIndex > 0) {
+//       curIndex--;
+//       // 递归
+//       return fn.call(null, result);
+//     } else {
+//       return result;
+//     }
+//   };
+// }
 
 // 迭代实现
 // function compose(...fns) {
