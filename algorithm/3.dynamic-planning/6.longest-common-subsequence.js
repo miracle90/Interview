@@ -14,7 +14,7 @@
 // 输入：text1 = "abc", text2 = "def"
 // 输出：0
 // 解释：两个字符串没有公共子序列，返回 0 。
-//
+
 // var longestCommonSubsequence = function (text1, text2) {
 //   const m = text1.length,
 //     n = text2.length;

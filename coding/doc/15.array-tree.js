@@ -7,6 +7,32 @@ const arr = [
   { id: 1, name: "部门1", pid: 0 },
   { id: 7, name: "部门1", pid: 0 },
 ];
+function arrToTree(arr) {
+  const map = {};
+  const result = [];
+  for (const item of arr) {
+    const { id, pid } = item;
+    map[id] = {
+      ...item,
+      children: map[id] !== undefined ? map[id] : [],
+    };
+    const mapItem = map[id];
+    if (pid === 0) {
+      result.push(mapItem);
+    } else {
+      if (map[pid]) {
+        map[pid].children.push(mapItem);
+      } else {
+        map[pid] = {
+          children: [mapItem],
+        };
+      }
+    }
+  }
+  return result;
+}
+console.dir(arrToTree(arr), { depth: null });
+
 const tree = {
   id: 1,
   name: "部门1",
@@ -64,38 +90,4 @@ function treeToArr(tree) {
   }
   return res;
 }
-/**
- * 构建一个map，key为 pid
- * @param {*} arr
- * @returns
- */
-function arrToTree(arr) {
-  const result = [];
-  const map = {};
-  // 循环数组
-  for (const item of arr) {
-    const { id, pid } = item;
-    // 以id为key，写入map中
-    map[id] = {
-      ...item,
-      // 子元素可能在数组中当前元素的前面，在map上写过了，children 复用过来
-      children: map[id] ? map[id].children : [], // 可能是之前的子元素在map上写入的，直接原封不动赋值
-    };
-    const mapItem = map[id];
-    if (pid === 0) {
-      result.push(mapItem);
-    } else {
-      if (map[pid]) {
-        map[pid].children.push(mapItem);
-      } else {
-        // 如果map中没有pid，插入一个，先写入children
-        map[pid] = {
-          children: [mapItem],
-        };
-      }
-    }
-  }
-  return result;
-}
 console.log(treeToArr(tree));
-console.dir(arrToTree(arr), { depth: null });

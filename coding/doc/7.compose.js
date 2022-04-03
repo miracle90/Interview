@@ -15,13 +15,12 @@ console.log(fn("sunny"));
 // 所以初始函数的参数是多元的，而其他函数的接收值是一元的
 // compose函数可以接收任意的参数，所有的参数都是函数
 // 且执行方向是自右向左的，初始函数一定到参数的最右面
-
 function compose(...funcs) {
   const len = funcs.length;
-  let curIndex = len - 1,
-    result;
+  let curIndex = len - 1;
+  let result = null;
   return function fn(...args) {
-    result = funcs[curIndex].apply(this, args);
+    result = funcs[curIndex].call(this, ...args);
     if (curIndex > 0) {
       curIndex--;
       return fn.call(null, result);
@@ -30,7 +29,6 @@ function compose(...funcs) {
     }
   };
 }
-
 // 递归实现
 // function compose(...funcs) {
 //   let len = funcs.length,
@@ -50,7 +48,6 @@ function compose(...funcs) {
 //     }
 //   };
 // }
-
 // 迭代实现
 // function compose(...fns) {
 //   let isFirst = true;
